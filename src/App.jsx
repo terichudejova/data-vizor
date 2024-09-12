@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import "./App.css"
 import { Outlet, NavLink } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop';
@@ -8,6 +8,7 @@ function App() {
 
   //Hamburger Menu
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -33,7 +34,22 @@ function App() {
         return () => {
           window.removeEventListener('scroll', handleScroll);
         };
+        
       }, []);
+
+  //Zavření hamburger menu při kliknutí na obrazovku
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+  
+    document.addEventListener('mousedown', handleClickOutside);
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+  }, []);
 
 
   return (
@@ -45,7 +61,7 @@ function App() {
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
-        <div className={`nav-links ${isOpen ? 'show' : ''}`}>
+        <div ref={navRef}  className={`nav-links ${isOpen ? 'show' : ''}`}>
           <NavLink to="/data-vizor/" end className="navLink" onClick={toggleMenu}>Home</NavLink>
           <NavLink to="/data-vizor/about" className="navLink" onClick={toggleMenu}>About Us</NavLink>
           <NavLink to="/data-vizor/services" className="navLink" onClick={toggleMenu}>Services</NavLink>
