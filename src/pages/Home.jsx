@@ -14,18 +14,17 @@ export default function Home() {
                <div className="benefits">
                     <h2>Key Benefits</h2>
                     <div className="cards">
+                        <div className="line"></div>
                         <div className="card">
                             <CloudIcon id="cloudPosition" className='cardIcon'/>
                             <h3>Cloud Access</h3>
                             <p>Access your data anytime, anywhere.</p>
                         </div>
-                        <div className="line"></div>
                         <div className="card">
                             <h3>Automatic Updates</h3>
                             <p>Always the latest version of the software.</p>
                             <CachedIcon className='cardIcon'/>
                         </div>
-                        <div className="line"></div>
                         <div className="card">
                             <h3>Advanced Analytics</h3>
                             <p>Transform data into actionable insights.</p>

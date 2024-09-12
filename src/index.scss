@@ -6,15 +6,25 @@
     @include column-start-center;
     width: 100%;
     background-color: $main-color;
+    height: auto;
 
     .innerBox {
         width: 90%;
+        min-height: 100vh;
 
-        h1 {
-            font-size: $f-xxxl * 2;
-            color: $dark-color;
-            letter-spacing: 2px;
+        @include w-2000 {
+            width: 85%;
         }
+
+        
+        @include w-3000 {
+            width: 80%;
+        }
+
+        @include w-400 {
+            width: 92%;
+        }
+
           
         h2 {
             font-size: $f-xxl;
@@ -55,9 +65,48 @@
             position: relative;
             margin-bottom: $s-l * 2.5;
 
+            @include w-800 {
+                height: 50rem;
+            }
+
+            @include w-600 {
+                height: 35rem;
+                margin-bottom: $s-xxxl;
+            }
+
             h1 {
                 padding-top: $s-xl;
                 padding-left: $s-xl;
+                font-size: $f-xxxl * 2;
+                color: $dark-color;
+                letter-spacing: 2px;
+
+                @include w-1400 {
+                    font-size: $f-s * 4;
+                }
+
+                @include w-1000 {
+                    font-size: $f-m * 3;
+                }
+
+                @include w-800 {
+                    font-size: $f-l * 1.8;
+                }
+
+                @include w-600 {
+                    font-size: $f-xl;
+                    padding-left: $s-s;
+                    padding-top: $s-s;
+                }
+
+                @include w-400 {
+                    padding-left: $s-xs;
+                    padding-top: $s-xs;
+                }
+
+                @include w-330 {
+                    font-size: $f-l;
+                }
 
                 span {
                     color: $hover-color;
@@ -71,6 +120,33 @@
                 right: -15rem;
                 top: 15rem;
                 transform: rotate(5deg);
+
+                @include w-1400 {
+                    width: 50rem;
+                    top: 20rem;
+                }
+
+                @include w-1000 {
+                    width: 45rem;
+                }
+
+                @include w-800 {
+                    width: 35rem;
+                    right: -10rem;
+                    transform: rotate(4deg);
+                }
+
+                @include w-600 {
+                    top: 12rem;
+                    width: 28rem;
+                    transform: rotate(3deg);
+                }
+
+                @include w-400 {
+                    width: 25rem;
+                    top: 15rem;
+                    transform: rotate(3deg);
+                }
             }
 
             .trialButton {
@@ -86,6 +162,25 @@
                 font-family: $main-font;
                 padding: $s-s / 2 $s-m / 2;
                 margin-left: $s-xl;
+
+                @include w-2000 {
+                    font-size: $f-l;
+                }
+
+                @include w-3000 {
+                    font-size: $f-xl;
+                }
+
+                @include w-600 {
+                    margin-left: $s-s;
+                    font-size: $f-s;
+                    margin-top: $s-s;
+                }
+
+                @include w-400 {
+                    margin-left: $s-xs;
+                }
+
             }
 
             .trialButton:hover {
@@ -99,11 +194,45 @@
 
             h2 {
                 font-size: $f-xl * 2;
+
+                @include w-2000 {
+                    font-size: $f-s * 4;
+                }
+
+                @include w-3000 {
+                    font-size: $f-xxxl * 2;
+                }
+
+                @include w-1200 {
+                    margin-bottom: $s-xxl;
+                }
+
+                @include w-1000 {
+                    font-size: $f-l * 2;
+                }
+
+                @include w-800 {
+                    font-size: $f-m * 2;
+                }
+
+                @include w-600 {
+                    font-size: $f-xl;
+                }
+
+                @include w-400 {
+                    margin-bottom: $s-l;
+                }
+
             }
 
             .cards {
                 @include row-between-center;
                 margin-bottom: $s-xxxl;
+                position: relative;
+
+                @include w-1200 {
+                    @include column-start-center;
+                }
 
                 .card {
                     @include column-start-center;
@@ -118,19 +247,68 @@
                     position: relative;
                     overflow: hidden;
 
+                    @include w-2000 {
+                        width: 45rem;
+                        height: 25rem;
+                    }
+
+                    @include w-3000 {
+                        width: 50rem;
+                        height: 25rem;
+                    }
+
+                    @include w-1400 {
+                        width: 33rem;
+                        padding-left: $s-s;
+                        padding-right: $s-s;
+                    }
+
+                    @include w-1200 {
+                        margin-bottom: $s-xxl;
+                    }
+
+                    @include w-400 {
+                        width: 90%;
+                    }
+
                     h3 {
                         font-size: $f-l;
                         color: $hover-color;
-                        font-size: $heading-font;
                         letter-spacing: 1.5px;
                         margin-top: $s-s;
                         margin-bottom: $s-xs;
+                        text-align: center;
+
+                        @include w-2000 {
+                            font-size: $f-xl;
+                        }
+
+                        @include w-3000 {
+                            font-size: $f-xxl;
+                        }
+
+                        @include w-400 {
+                            font-size: $f-m;
+                        }
+                    
                     }
 
                     p {
                         font-size: $f-m;
                         color: $hover-color;
                         margin-top: 0;
+
+                        @include w-2000 {
+                            font-size: $f-l;
+                        }
+
+                        @include w-3000 {
+                            font-size: $f-xl;
+                        }
+
+                        @include w-600 {
+                            font-size: $f-s;
+                        }
                     }
                 }
 
@@ -149,10 +327,17 @@
                 }
 
                 .line {
-                    width: 10rem;
+                    width: 100%;
                     height: 5px;
                     background-color: $hover-color;
                     border-radius: 20px;
+                    position: absolute;
+
+                    @include w-1200 {
+                        transform: rotate(90deg);
+                        width: 60rem;
+                        top: 50%;
+                    }
                 }
             }
         }
@@ -164,11 +349,23 @@
         @include row-center-center;
 
         a {
-            font-size: $f-xxs;
+            font-size: $f-xs;
             padding: $s-xs;
             text-decoration: none;
             color: $hover-color;
             transition: all 0.3s ease-in-out;
+
+            @include w-2000 {
+                font-size: $f-s;
+            }
+
+            @include w-3000 {
+                font-size: $f-m;
+            }
+
+            @include w-400 {
+                font-size: $f-xxs;
+            }
         }
 
         a:hover {
@@ -218,6 +415,10 @@
 
   #homeLink {
     margin-right: $s-xxxl * 2;
+
+    @include w-1400 {
+        margin-right: 0;
+    }
   }
 
   #homeLink:hover {
@@ -310,8 +511,8 @@
       transition: 0.3s ease-in-out;
       margin-top: 0;
       z-index: 1;
-      padding-top: $s-xs;
-      padding-bottom: $s-xs;
+      padding-top: $s-m;
+      padding-bottom: $s-m;
     }
   
     .navLink {
@@ -335,8 +536,13 @@
     }
   
     #homeLink {
-      color: $light-color;
+      margin: 0;
     }
+
+    #homeLink.active {
+        margin: 0;
+        margin-bottom: $s-xs;
+      }
   }
   
   /* HOME */
@@ -352,63 +558,15 @@
   
   
   /* RESPONSIVITY */
-  .outerBox {
-    .innerBox {
+  .navLink {
+    //min 2000px
+    @include w-2000 {
+        font-size: $f-l;
+    }
 
-        //min 2000px
-        @include w-2000 {
-            width: 70%;
-
-            h2 {
-                font-size: $f-xxxl;
-            }
-            
-            p {
-                font-size: $f-l;
-            }
-        }
-
-        //min 3000px
-        @include w-3000 {
-            width: 60%;
-
-            h2 {
-                font-size: $f-l * 2;
-            }
-            
-            p {
-                font-size: $f-xl;
-            }
-        }
-
-        //max 800px
-        @include w-800 {
-            h2 {
-                font-size: $f-xl;
-
-            }
-
-            p {
-                font-size: $f-s;
-            }
-        }
-
-        //max 600px
-        @include w-600 {
-            width: 85%;
-        }
-
-        //max 400px
-        @include w-400 {
-
-            h2 {
-                font-size: $f-l;
-            }
-
-            p {
-                font-size: $f-s;
-            }
-        }
+    //min 3000px
+    @include w-3000 {
+        font-size: $f-xl;
     }
   }
 
