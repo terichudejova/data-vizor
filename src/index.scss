@@ -164,6 +164,7 @@
                 font-family: $main-font;
                 padding: $s-s / 2 $s-m / 2;
                 margin-left: $s-xl;
+                text-decoration: none;
 
                 @include w-2000 {
                     font-size: $f-l;
@@ -412,7 +413,8 @@
     font-size: $f-m;
     padding: $s-xxs $s-xs;
     color: $dark-color;
-    @include row-center-center
+    transition: color 0.2s ease-in-out;
+    @include row-center-center;
   }
   
   .navLink:hover {

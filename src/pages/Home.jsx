@@ -1,6 +1,7 @@
 import CloudIcon from '@mui/icons-material/Cloud';
 import CachedIcon from '@mui/icons-material/Cached';
 import AssessmentIcon from '@mui/icons-material/Assessment';
+import { NavLink } from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -8,7 +9,9 @@ export default function Home() {
             <div className="innerBox">
                <div className="clouds">
                     <h1>Your <span>Cloud</span> Data,<br/>Real-Time<br/>Decisions.</h1>
-                    <button className="trialButton">Try Free</button>
+                    <NavLink to="/data-vizor/contact" className="trialButton">
+                        Try Free
+                    </NavLink>
                     <img id="mockup" src="images/mockup.png"/>
                </div>
                <div className="benefits">
