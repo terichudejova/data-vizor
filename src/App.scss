@@ -9,11 +9,11 @@ $main-font: "Work Sans", sans-serif;
 $heading-font: "Outfit", sans-serif;
 
 //colors
-$main-color: #daf0eb;
-$dark-color: #3c8eac;
-$light-color: #DAFDFF;
+$main-color: white;
+$dark-color: #5974a9;
+$light-color: #c7d9ff;
 $contrast-color: #f39530;
-$hover-color: #002a43;
+$hover-color: #033755;
 
 //font sizes
 $f-xxxs: 1rem;
@@ -37,6 +37,8 @@ $s-xl: 6rem;
 $s-xxl: 7rem;
 $s-xxxl: 9rem;
 
+//shadows
+$main-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
 
 
 //mixins

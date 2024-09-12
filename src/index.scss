@@ -2,23 +2,24 @@
 
 /* OBECNÁ NASTAVENÍ */
 .outerBox {
-    padding-top: $s-l * 3;
+    padding-top: $s-l * 2;
     @include column-start-center;
     width: 100%;
     background-color: $main-color;
 
     .innerBox {
-        width: 80%;
-        border: dashed 0.2px black;
+        width: 90%;
 
         h1 {
-            font-size: $f-xxxl;
+            font-size: $f-xxxl * 2;
             color: $dark-color;
+            letter-spacing: 2px;
         }
           
         h2 {
             font-size: $f-xxl;
             color: $dark-color;
+            letter-spacing: 2px;
         }
           
         p {
@@ -26,10 +27,161 @@
             color: $dark-color;
         }
       }
-  }
+}
+
+
+// NAVBAR
+.cloudIcon {
+    color: $dark-color;
+    font-size: $f-xl !important;
+    margin-left: $s-xxs;
+    padding: 0;
+}
   
   
-  
+//   HOME PAGE
+
+.outerBox {
+    .innerBox {
+        .clouds {
+            background-image: url(images/clouds.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 60rem;
+            border-radius: 10px;
+            padding: 0;
+            position: relative;
+            margin-bottom: $s-l * 2.5;
+
+            h1 {
+                padding-top: $s-xl;
+                padding-left: $s-xl;
+
+                span {
+                    color: $hover-color;
+                }
+            }
+
+            #mockup {
+                width: 60rem;
+                height: auto;
+                position: absolute;
+                right: -15rem;
+                top: 15rem;
+                transform: rotate(5deg);
+            }
+
+            .trialButton {
+                background-color: $dark-color;
+                color: $main-color;
+                border: none;
+                cursor: pointer;
+                border-radius: 16px;
+                width: auto;
+                height: auto;
+                transition: 0.3s;
+                font-size: $f-m;
+                font-family: $main-font;
+                padding: $s-s / 2 $s-m / 2;
+                margin-left: $s-xl;
+            }
+
+            .trialButton:hover {
+                background-color: $hover-color;
+                box-shadow: 0 0 0 5px $dark-color;
+                color: #fff;
+            }
+        }
+
+        .benefits {
+
+            h2 {
+                font-size: $f-xl * 2;
+            }
+
+            .cards {
+                @include row-between-center;
+                margin-bottom: $s-xxxl;
+
+                .card {
+                    @include column-start-center;
+                    width: 35rem;
+                    height: 20rem;
+                    background-color: $light-color;
+                    border-radius: 16px;
+                    box-shadow: $main-shadow;
+                    padding-left: $s-m;
+                    padding-right: $s-m;
+                    box-sizing: border-box;
+                    position: relative;
+                    overflow: hidden;
+
+                    h3 {
+                        font-size: $f-l;
+                        color: $hover-color;
+                        font-size: $heading-font;
+                        letter-spacing: 1.5px;
+                        margin-top: $s-s;
+                        margin-bottom: $s-xs;
+                    }
+
+                    p {
+                        font-size: $f-m;
+                        color: $hover-color;
+                        margin-top: 0;
+                    }
+                }
+
+                .cardIcon {
+                    color: $hover-color;
+                    font-size: $f-xxxl * 5 !important;
+                    opacity: 0.2;
+                    position: absolute;
+                    right: -45px;
+                    bottom: 0;
+                    margin: 0;
+                }
+
+                #cloudPosition {
+                    right: -30px;
+                }
+
+                .line {
+                    width: 10rem;
+                    height: 5px;
+                    background-color: $hover-color;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: $light-color;
+        width: 100%;
+        @include row-center-center;
+
+        a {
+            font-size: $f-xxs;
+            padding: $s-xs;
+            text-decoration: none;
+            color: $hover-color;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            font-size: $f-xxs * 1.05;
+        }
+    }
+}
+
+
+
+
+
   
   /* NAVBAR */
   nav {
@@ -56,11 +208,35 @@
     font-size: $f-m;
     padding: $s-xxs $s-xs;
     color: $dark-color;
+    @include row-center-center
   }
   
   .navLink:hover {
     cursor: pointer;
     color: $hover-color;
+  }
+
+  #homeLink {
+    margin-right: $s-xxxl * 2;
+  }
+
+  #homeLink:hover {
+    color: $main-color;
+    background-color: $dark-color;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
+  #homeLink:hover .cloudIcon {
+    color: $main-color;
+  }
+
+  #homeLink.active {
+    background-color: $hover-color;
+  }
+
+  #homeLink.active .cloudIcon {
+    color: $main-color;
   }
   
   .navLink.active {

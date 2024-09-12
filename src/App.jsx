@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import "./App.css"
 import { Outlet, NavLink } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop';
+import CloudIcon from '@mui/icons-material/Cloud';
 
 function App() {
 
@@ -34,7 +35,7 @@ function App() {
         return () => {
           window.removeEventListener('scroll', handleScroll);
         };
-        
+
       }, []);
 
   //Zavření hamburger menu při kliknutí na obrazovku
@@ -62,7 +63,7 @@ function App() {
           <span className="bar"></span>
         </div>
         <div ref={navRef}  className={`nav-links ${isOpen ? 'show' : ''}`}>
-          <NavLink to="/data-vizor/" end className="navLink" onClick={toggleMenu}>Home</NavLink>
+          <NavLink to="/data-vizor/" end className="navLink" onClick={toggleMenu} id='homeLink'>DataVizor <CloudIcon className='cloudIcon'/></NavLink>
           <NavLink to="/data-vizor/about" className="navLink" onClick={toggleMenu}>About Us</NavLink>
           <NavLink to="/data-vizor/services" className="navLink" onClick={toggleMenu}>Services</NavLink>
           <NavLink to="/data-vizor/prices" className="navLink" onClick={toggleMenu}>Prices</NavLink>
