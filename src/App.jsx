@@ -1,19 +1,57 @@
-import { useState } from 'react'
-
-import './App.css'
-import { NavLink, Outlet } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import "./App.css"
+import { Outlet, NavLink } from 'react-router-dom'
+import ScrollToTop from './ScrollToTop';
 
 function App() {
 
 
+  //Hamburger Menu
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  //Pozadí pro wide navbar při scrollování
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      setIsScrolled(true);
+    }
+    else {
+      setIsScrolled(false)
+    };
+  }
+
+      // Přidání event listeneru při načtení komponenty
+      useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        // Čištění event listeneru při odchodu z komponenty
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
+
   return (
     <div>
-      <nav>
-        <NavLink to="/data-vizor/" end>Home</NavLink>
-        <NavLink to="/data-vizor/about">About Us</NavLink>
-        <NavLink to="/data-vizor/services">Services</NavLink>
-        <NavLink to="/data-vizor/prices">Prices</NavLink>
-        <NavLink to="/data-vizor/contact">Contact Us</NavLink>
+      <ScrollToTop />
+      <nav className={`nav ${isOpen ? 'open' : ''} ${isScrolled ? 'scrolled' : ''}`}>
+        <div className="hamburger" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+        <div className={`nav-links ${isOpen ? 'show' : ''}`}>
+          <NavLink to="/data-vizor/" end className="navLink" onClick={toggleMenu}>Home</NavLink>
+          <NavLink to="/data-vizor/about" className="navLink" onClick={toggleMenu}>About Us</NavLink>
+          <NavLink to="/data-vizor/services" className="navLink" onClick={toggleMenu}>Services</NavLink>
+          <NavLink to="/data-vizor/prices" className="navLink" onClick={toggleMenu}>Prices</NavLink>
+          <NavLink to="/data-vizor/contact" className="navLink" onClick={toggleMenu}>Contact Us</NavLink>
+        </div>
       </nav>
       <Outlet />
     </div>
