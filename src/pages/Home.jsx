@@ -14,6 +14,9 @@ export default function Home() {
                     </NavLink>
                     <img id="mockup" src="images/mockup.png"/>
                </div>
+               <div className="subheadline">
+                <p><span>DataVizor</span> offers a comprehensive, <span>cloud-based platform</span> designed to revolutionize the way you analyze, visualize, and report data. By simplifying complex processes and providing <span>real-time access</span> to powerful insights, DataVisor ensures that you can make informed <span>decisions from anywhere, at any time</span>. Whether you're managing large-scale operations or seeking detailed analysis, our solution delivers the flexibility and efficiency you need to stay ahead in a data-driven world.</p>
+               </div>
                <div className="benefits">
                     <h2>Key Benefits</h2>
                     <div className="cards">

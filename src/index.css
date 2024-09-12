@@ -75,7 +75,7 @@ body, html {
   border-radius: 10px;
   padding: 0;
   position: relative;
-  margin-bottom: 12.5rem;
+  margin-bottom: 7.5rem;
 }
 @media only screen and (max-width: 1000px) {
   .outerBox .innerBox .clouds {
@@ -227,8 +227,32 @@ body, html {
   box-shadow: 0 0 0 5px #5974a9;
   color: #fff;
 }
+.outerBox .innerBox .subheadline p {
+  color: #033755;
+  font-size: 2rem;
+  line-height: 1.7;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .subheadline p {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .subheadline p {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .outerBox .innerBox .subheadline p {
+    font-size: 1.8rem;
+  }
+}
+.outerBox .innerBox .subheadline p span {
+  font-weight: 700;
+}
 .outerBox .innerBox .benefits h2 {
   font-size: 6rem;
+  margin-top: 9rem;
 }
 @media only screen and (min-width: 2000px) {
   .outerBox .innerBox .benefits h2 {

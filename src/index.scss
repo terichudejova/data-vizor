@@ -67,7 +67,7 @@
             border-radius: 10px;
             padding: 0;
             position: relative;
-            margin-bottom: $s-l * 2.5;
+            margin-bottom: $s-l * 1.5;
 
             @include w-1000 {
                 margin-top: $s-xxxl;
@@ -207,10 +207,35 @@
             }
         }
 
+        .subheadline {
+            p {
+                color: $hover-color;
+                font-size: $f-m;
+                line-height: 1.7;
+
+                @include w-2000 {
+                    font-size: $f-l;
+                }
+
+                @include w-3000 {
+                    font-size: $f-xl;
+                }
+
+                @include w-600 {
+                    font-size: $f-s;
+                }
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+
         .benefits {
 
             h2 {
                 font-size: $f-xl * 2;
+                margin-top: $s-xxxl;
 
                 @include w-2000 {
                     font-size: $f-s * 4;
