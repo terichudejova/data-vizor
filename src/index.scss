@@ -47,6 +47,10 @@
     margin-left: $s-xxs;
     padding: 0;
 }
+
+#companyName {
+    display: none;
+}
   
   
 //   HOME PAGE
@@ -65,6 +69,10 @@
             position: relative;
             margin-bottom: $s-l * 2.5;
 
+            @include w-1000 {
+                margin-top: $s-xxxl;
+            }
+
             @include w-800 {
                 height: 50rem;
             }
@@ -72,6 +80,7 @@
             @include w-600 {
                 height: 35rem;
                 margin-bottom: $s-xxxl;
+                margin-top: $s-xl;
             }
 
             h1 {
@@ -501,6 +510,19 @@
 
 @media only screen and (max-width: 1000px) {
     /* NAVBAR */
+    #companyName {
+        display: block;
+        font-size: $f-l;
+        color: $hover-color;
+        letter-spacing: 1.8px;
+        font-weight: 600;
+        margin-top: $s-m;
+
+        @include w-600 {
+            font-size: $f-m;
+        }
+    }
+
     .nav-links {
       display: none;
     }

@@ -61,6 +61,10 @@ body, html {
   padding: 0;
 }
 
+#companyName {
+  display: none;
+}
+
 .outerBox .innerBox .clouds {
   background-image: url(../public/images/clouds.jpg);
   background-size: cover;
@@ -73,6 +77,11 @@ body, html {
   position: relative;
   margin-bottom: 12.5rem;
 }
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .clouds {
+    margin-top: 9rem;
+  }
+}
 @media only screen and (max-width: 800px) {
   .outerBox .innerBox .clouds {
     height: 50rem;
@@ -82,6 +91,7 @@ body, html {
   .outerBox .innerBox .clouds {
     height: 35rem;
     margin-bottom: 9rem;
+    margin-top: 6rem;
   }
 }
 .outerBox .innerBox .clouds h1 {
@@ -538,6 +548,21 @@ nav {
 
 @media only screen and (max-width: 1000px) {
   /* NAVBAR */
+  #companyName {
+    display: block;
+    font-size: 2.5rem;
+    color: #033755;
+    letter-spacing: 1.8px;
+    font-weight: 600;
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 1000px) and (max-width: 600px) {
+  #companyName {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
   .nav-links {
     display: none;
   }
