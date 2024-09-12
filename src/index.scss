@@ -138,12 +138,14 @@
 
                 @include w-600 {
                     top: 12rem;
+                    right: -8rem;
                     width: 28rem;
                     transform: rotate(3deg);
                 }
 
                 @include w-400 {
                     width: 25rem;
+                    right: -7rem;
                     top: 15rem;
                     transform: rotate(3deg);
                 }
@@ -254,7 +256,6 @@
 
                     @include w-3000 {
                         width: 50rem;
-                        height: 25rem;
                     }
 
                     @include w-1400 {
@@ -265,6 +266,12 @@
 
                     @include w-1200 {
                         margin-bottom: $s-xxl;
+                    }
+
+                    @include w-600 {
+                        padding-left: $s-xs;
+                        padding-right: $s-xs;
+                        height: 20rem;
                     }
 
                     @include w-400 {
