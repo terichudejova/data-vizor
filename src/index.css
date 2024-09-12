@@ -62,7 +62,7 @@ body, html {
 }
 
 .outerBox .innerBox .clouds {
-  background-image: url(images/clouds.jpg);
+  background-image: url(../public/images/clouds.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
