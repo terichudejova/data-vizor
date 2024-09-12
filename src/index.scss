@@ -13,17 +13,17 @@
 
         h1 {
             font-size: $f-xxxl;
-            color: white;
+            color: $dark-color;
         }
           
         h2 {
             font-size: $f-xxl;
-            color: white;
+            color: $dark-color;
         }
           
         p {
             font-size: $f-m;
-            color: white;
+            color: $dark-color;
         }
       }
   }
@@ -55,7 +55,7 @@
     letter-spacing: 2px;
     font-size: $f-m;
     padding: $s-xxs $s-xs;
-    color: white;
+    color: $dark-color;
   }
   
   .navLink:hover {
@@ -64,13 +64,13 @@
   }
   
   .navLink.active {
-    color: $hover-color;
-    background-color: $main-color;
+    color: $main-color;
+    background-color: $dark-color;
     border-radius: 16px;
   }
   
   .nav.scrolled {
-    background-color: $light-color;
+    background-color: $main-color;
     padding-top: $s-xs;
     padding-bottom: $s-xs;
   }
@@ -86,7 +86,7 @@
   .bar {
     height: 3px;
     width: 35px;
-    background-color: $light-color;
+    background-color: $dark-color;
     border-radius: 3px;
     transition: all 0.3s ease;
     margin-bottom: 10px;
@@ -140,7 +140,7 @@
   
     .navLink {
       margin-bottom: $s-xxs;
-      color: $main-color;
+      color: $dark-color;
     }
   
     .hamburger {
@@ -150,12 +150,12 @@
     }
   
     .nav.open .bar {
-      background-color: $hover-color;
+      background-color: $dark-color;
     }
     
     .nav-links.show {
       display: flex;
-      background-color: $light-color;
+      background-color: $main-color;
     }
   
     #homeLink {

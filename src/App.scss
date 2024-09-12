@@ -4,15 +4,16 @@
 //VARIABLES
 
 //fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-$main-font: "Roboto", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+$main-font: "Work Sans", sans-serif;
+$heading-font: "Outfit", sans-serif;
 
 //colors
-$main-color: #58a0dc;
-$dark-color: #11658f;
-$light-color: #d6f4ff;
-$contrast-color: #e39e21;
-$hover-color: #3b4856;
+$main-color: #daf0eb;
+$dark-color: #3c8eac;
+$light-color: #DAFDFF;
+$contrast-color: #f39530;
+$hover-color: #002a43;
 
 //font sizes
 $f-xxxs: 1rem;
