@@ -146,7 +146,7 @@
                 }
 
                 @include w-600 {
-                    top: 12rem;
+                    top: 14rem;
                     right: -8rem;
                     width: 28rem;
                     transform: rotate(3deg);
@@ -154,9 +154,13 @@
 
                 @include w-400 {
                     width: 25rem;
-                    right: -7rem;
                     top: 15rem;
+                    right: -7rem;
                     transform: rotate(3deg);
+                }
+
+                @include w-330 {
+                    right: -10rem;
                 }
             }
 
@@ -174,6 +178,8 @@
                 padding: $s-s / 2 $s-m / 2;
                 margin-left: $s-xl;
                 text-decoration: none;
+                position: absolute;
+                bottom: $s-l;
 
                 @include w-2000 {
                     font-size: $f-l;
@@ -186,7 +192,6 @@
                 @include w-600 {
                     margin-left: $s-s;
                     font-size: $f-s;
-                    margin-top: $s-s;
                 }
 
                 @include w-400 {

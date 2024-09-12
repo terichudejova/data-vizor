@@ -165,7 +165,7 @@ body, html {
 }
 @media only screen and (max-width: 600px) {
   .outerBox .innerBox .clouds #mockup {
-    top: 12rem;
+    top: 14rem;
     right: -8rem;
     width: 28rem;
     transform: rotate(3deg);
@@ -174,9 +174,14 @@ body, html {
 @media only screen and (max-width: 400px) {
   .outerBox .innerBox .clouds #mockup {
     width: 25rem;
-    right: -7rem;
     top: 15rem;
+    right: -7rem;
     transform: rotate(3deg);
+  }
+}
+@media only screen and (max-width: 330px) {
+  .outerBox .innerBox .clouds #mockup {
+    right: -10rem;
   }
 }
 .outerBox .innerBox .clouds .trialButton {
@@ -193,6 +198,8 @@ body, html {
   padding: 1.5rem 2rem;
   margin-left: 6rem;
   text-decoration: none;
+  position: absolute;
+  bottom: 5rem;
 }
 @media only screen and (min-width: 2000px) {
   .outerBox .innerBox .clouds .trialButton {
@@ -208,7 +215,6 @@ body, html {
   .outerBox .innerBox .clouds .trialButton {
     margin-left: 3rem;
     font-size: 1.8rem;
-    margin-top: 3rem;
   }
 }
 @media only screen and (max-width: 400px) {
