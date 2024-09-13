@@ -280,6 +280,9 @@ footer a:hover {
 .outerBox .innerBox .subheadline p span {
   font-weight: 700;
 }
+.outerBox .innerBox .benefits {
+  width: 100%;
+}
 .outerBox .innerBox .benefits h2 {
   font-size: 6rem;
   margin-top: 9rem;
@@ -487,11 +490,34 @@ footer a:hover {
   letter-spacing: 2px;
   width: 50%;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .firstSection h2 {
+    font-size: 8rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .firstSection h2 {
+    font-size: 9rem;
+  }
+}
 .outerBox .innerBox .firstSection .rightColumn {
   width: 50%;
 }
 .outerBox .innerBox .firstSection .rightColumn span {
   font-weight: 600;
+}
+.outerBox .innerBox .firstSection .rightColumn p {
+  font-size: 2rem;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .firstSection .rightColumn p {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .firstSection .rightColumn p {
+    font-size: 3rem;
+  }
 }
 .outerBox .innerBox .secondSection {
   display: flex;
@@ -512,7 +538,7 @@ footer a:hover {
   width: 50%;
 }
 .outerBox .innerBox .secondSection .quoteSection .quoteIcon {
-  font-size: 9rem;
+  font-size: 10rem;
   color: #033755;
   position: absolute;
   bottom: -60px;
@@ -528,6 +554,16 @@ footer a:hover {
   font-weight: 600;
   text-align: center;
   padding: 0 3rem;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .secondSection .quoteSection p {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .secondSection .quoteSection p {
+    font-size: 5rem;
+  }
 }
 .outerBox .innerBox .thirdSection {
   display: flex;
@@ -547,6 +583,16 @@ footer a:hover {
   letter-spacing: 2px;
   width: 100%;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .thirdSection .leftColumn h2 {
+    font-size: 8rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .thirdSection .leftColumn h2 {
+    font-size: 9rem;
+  }
+}
 .outerBox .innerBox .thirdSection .leftColumn p {
   width: 80%;
   margin-top: 15rem;
@@ -555,6 +601,17 @@ footer a:hover {
   border-bottom: 2px solid #c7d9ff;
   padding-bottom: 2rem;
   text-align: left;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .thirdSection .leftColumn p {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .thirdSection .leftColumn p {
+    font-size: 3rem;
+  }
 }
 .outerBox .innerBox .thirdSection .leftColumn p span {
   font-weight: 600;
@@ -593,8 +650,29 @@ footer a:hover {
   font-family: "Work Sans", sans-serif;
   color: #033755;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek h4 {
+    font-size: 3.6rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek h4 {
+    font-size: 4rem;
+  }
+}
 .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek p {
   width: 100%;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek p {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek p {
+    font-size: 3rem;
+  }
 }
 .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek .timelineLine {
   width: 15rem;

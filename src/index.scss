@@ -256,6 +256,7 @@ footer {
         }
 
         .benefits {
+            width: 100%;
 
             h2 {
                 font-size: $f-xl * 2;
@@ -442,6 +443,14 @@ footer {
                 color: $dark-color;
                 letter-spacing: 2px;
                 width: 50%;
+
+                @include w-2000 {
+                    font-size: $f-xxxl * 2;
+                }
+
+                @include w-3000 {
+                    font-size: $f-xl * 3;
+                }
             }
 
             .rightColumn {
@@ -449,6 +458,18 @@ footer {
 
                 span {
                     font-weight: 600;
+                }
+
+                p {
+                    font-size: $f-m;
+
+                    @include w-2000 {
+                        font-size: $f-l;
+                    }
+    
+                    @include w-3000 {
+                        font-size: $f-xl;
+                    }
                 }
             }
         }
@@ -470,7 +491,7 @@ footer {
                 width: 50%;
 
                 .quoteIcon {
-                    font-size: $s-xxxl;
+                    font-size: $f-l * 4;
                     color: $hover-color;
                     position: absolute;
                     bottom: -60px;
@@ -488,6 +509,14 @@ footer {
                     font-weight: 600;
                     text-align: center;
                     padding: 0 $s-s;
+
+                    @include w-2000 {
+                        font-size: $f-xxxl;
+                    }
+
+                    @include w-3000 {
+                        font-size: $f-l * 2;
+                    }
                 }
             }
         }
@@ -506,6 +535,14 @@ footer {
                     color: $dark-color;
                     letter-spacing: 2px;
                     width: 100%;
+
+                    @include w-2000 {
+                        font-size: $f-xxxl * 2;
+                    }
+    
+                    @include w-3000 {
+                        font-size: $f-xl * 3;
+                    }
                 }
 
                 p {
@@ -516,7 +553,16 @@ footer {
                     border-bottom: 2px solid $light-color;
                     padding-bottom: $s-xs;
                     text-align: left;
-
+                    font-size: $f-m;
+    
+                    @include w-2000 {
+                        font-size: $f-l;
+                    }
+        
+                    @include w-3000 {
+                        font-size: $f-xl;
+                    }
+                    
                     span {
                         font-weight: 600;
                     }
@@ -549,15 +595,32 @@ footer {
                         margin-left: $s-xs;
     
                         h4 {
-                            font-size: $s-s;
+                            font-size: $f-xl;
                             margin-top: 0;
                             margin-bottom: 0;
                             font-family: $main-font;
                             color: $hover-color;
+
+                            @include w-2000 {
+                                font-size: $f-xxl;
+                            }
+
+                            @include w-3000 {
+                                font-size: $f-xxxl;
+                            }
                         }
     
                         p {
                             width: 100%;
+                            font-size: $f-m;
+
+                            @include w-2000 {
+                                font-size: $f-l;
+                            }
+
+                            @include w-3000 {
+                                font-size: $f-xl;
+                            }
                         }
     
                         .timelineLine {
