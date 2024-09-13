@@ -63,6 +63,20 @@ $main-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
     align-items: center;
 }
 
+@mixin row-between-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+@mixin row-start-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
 
 //breakpoints
 $breakpoints: (

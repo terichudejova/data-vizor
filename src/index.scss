@@ -26,17 +26,42 @@
         }
 
           
-        h2 {
-            font-size: $f-xxl;
-            color: $dark-color;
-            letter-spacing: 2px;
-        }
-          
         p {
             font-size: $f-m;
             color: $dark-color;
         }
       }
+}
+
+footer {
+    background-color: $light-color;
+    width: 100%;
+    @include row-center-center;
+
+    a {
+        font-size: $f-xs;
+        padding: $s-xs;
+        text-decoration: none;
+        color: $hover-color;
+        transition: all 0.3s ease-in-out;
+
+        @include w-2000 {
+            font-size: $f-s;
+        }
+
+        @include w-3000 {
+            font-size: $f-m;
+        }
+
+        @include w-400 {
+            font-size: $f-xxs;
+        }
+    }
+
+    a:hover {
+        text-decoration: underline;
+        font-size: $f-xs * 1.05;
+    }
 }
 
 
@@ -54,7 +79,6 @@
   
   
 //   HOME PAGE
-
 .outerBox {
     .innerBox {
         .clouds {
@@ -389,40 +413,173 @@
             }
         }
     }
-
-    footer {
-        background-color: $light-color;
-        width: 100%;
-        @include row-center-center;
-
-        a {
-            font-size: $f-xs;
-            padding: $s-xs;
-            text-decoration: none;
-            color: $hover-color;
-            transition: all 0.3s ease-in-out;
-
-            @include w-2000 {
-                font-size: $f-s;
-            }
-
-            @include w-3000 {
-                font-size: $f-m;
-            }
-
-            @include w-400 {
-                font-size: $f-xxs;
-            }
-        }
-
-        a:hover {
-            text-decoration: underline;
-            font-size: $f-xxs * 1.05;
-        }
-    }
 }
 
 
+
+
+// ABOUT US
+.outerBox {
+    .innerBox {
+        position: relative;
+        @include column-start-center;
+        width: 90%;
+
+        @include w-2000 {
+            width: 70%;
+        }
+
+        @include w-3000 {
+            width: 60%;
+        }
+
+        .firstSection {
+            @include row-between-center;
+            margin-top: $s-l;
+            
+            h2 {
+                font-size: $f-l * 3;
+                color: $dark-color;
+                letter-spacing: 2px;
+                width: 50%;
+            }
+
+            .rightColumn {
+                width: 50%;
+
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .secondSection {
+            @include row-between-center;
+            margin-top: $s-xxl;
+            width: 100%;
+
+            #austinImg {
+                width: 50rem;
+                height: auto;
+                border-radius: 16px;
+                box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 20px;
+            }
+
+            .quoteSection {
+                position: relative;
+                width: 50%;
+
+                .quoteIcon {
+                    font-size: $s-xxxl;
+                    color: $hover-color;
+                    position: absolute;
+                    bottom: -60px;
+                    right: 0;
+                }
+
+                .quoteIcon:nth-of-type(1) {
+                    transform: rotate(180deg);
+                    top: -60px;
+                    left: 0;
+                }
+
+                p {
+                    font-size: $f-xxl;
+                    font-weight: 600;
+                    text-align: center;
+                    padding: 0 $s-s;
+                }
+            }
+        }
+
+        .thirdSection {
+            @include row-between-start;
+            margin-top: $s-xxl;
+            margin-bottom: $s-xxl;
+            width: 100%;
+
+            .leftColumn {
+                width: 50%;
+
+                h2 {
+                    font-size: $f-l * 3;
+                    color: $dark-color;
+                    letter-spacing: 2px;
+                    width: 100%;
+                }
+
+                p {
+                    width: 80%;
+                    margin-top: $s-l * 3;
+                    border-top: 2px solid $light-color;
+                    padding-top: $s-xs;
+                    border-bottom: 2px solid $light-color;
+                    padding-bottom: $s-xs;
+                    text-align: left;
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .timeline {
+                width: 50%;
+                margin-top: $s-m;
+                margin-bottom: $s-xl;
+                margin-left: $s-xl;
+                border-left: $hover-color solid 3px;
+                height: auto;
+    
+                .timelineSection {
+                    @include row-start-start;
+                    margin-bottom: $s-s;
+    
+                    .circle {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: $hover-color;
+                        transform: translateX(-15px);
+                        flex-shrink: 0;
+                        box-sizing: border-box;
+                    }
+    
+                    .popisek {
+                        margin-left: $s-xs;
+    
+                        h4 {
+                            font-size: $s-s;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            font-family: $main-font;
+                            color: $hover-color;
+                        }
+    
+                        p {
+                            width: 100%;
+                        }
+    
+                        .timelineLine {
+                            width: 15rem;
+                            height: 2px;
+                            border-radius: 20px;
+                            background-color: $light-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+
+        
+
+        
+
+        
+    }
+}
 
 
 
