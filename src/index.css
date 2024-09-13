@@ -358,7 +358,7 @@ footer a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 9rem;
+  margin-bottom: 0;
   position: relative;
 }
 @media only screen and (max-width: 1200px) {

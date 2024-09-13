@@ -323,7 +323,7 @@ footer {
 
             .cards {
                 @include row-between-center;
-                margin-bottom: $s-xxxl;
+                margin-bottom: 0;
                 position: relative;
 
                 @include w-1200 {
