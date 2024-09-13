@@ -101,8 +101,94 @@ $main-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
     box-shadow: $main-shadow;
     position: relative;
     overflow: hidden;
+
+    @include w-2000 {
+        height: 50rem;
+    }
+
+    @include w-3000 {
+        height: 55rem;
+    }
+
+    @include w-1400 {
+        width: 30%;
+    }
+
+    @include w-1200 {
+        height: 45rem;
+    }
+
+    @include w-1000 {
+        width: 80%;
+        height: auto;
+        margin-bottom: $s-xxl;
+    }
+
+    @include w-800 {
+        width: 90%;
+    }
+
+    @include w-400 {
+        width: 100%;
+    }
 }
 
+@mixin h3card {
+    font-size: $f-l;
+    color: $hover-color;
+    text-align: center;
+    letter-spacing: 1.2px;
+
+    @include w-2000 {
+        font-size: $f-xl;
+    }
+
+    @include w-3000 {
+        font-size: $f-xxl;
+    }
+}
+
+@mixin h4card {
+    font-size: $f-m;
+    color: $dark-color;
+
+    @include w-2000 {
+        font-size: $f-l;
+    }
+
+    @include w-3000 {
+        font-size: $f-xl;
+    }
+}
+
+@mixin cardIcon {
+    position: absolute;
+    font-size: $f-xxxl * 7;
+    right: -70px;
+    bottom: 0;
+    color: $hover-color;
+    opacity: 0.1;
+
+    @include w-2000 {
+        font-size: $f-xxxl * 8;
+        right: -80px;
+    }
+
+    @include w-3000 {
+        font-size: $f-xxxl * 9;
+        right: -90px;
+    }
+
+    @include w-1000 {
+        font-size: $f-xxxl * 6;
+        right: -50px;
+    }
+
+    @include w-600 {
+        font-size: $f-xxxl * 5;
+        right: -45px;
+    }
+}
 
 //breakpoints
 $breakpoints: (

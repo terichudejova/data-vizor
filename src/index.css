@@ -72,6 +72,32 @@ body, html {
   color: #5974a9;
   letter-spacing: 1.5px;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox h2 {
+    font-size: 8rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox h2 {
+    font-size: 9rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox h2 {
+    width: 100%;
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .outerBox .innerBox h2 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox h2 {
+    font-size: 4rem;
+  }
+}
 
 footer {
   background-color: #c7d9ff;
@@ -486,32 +512,6 @@ footer a:hover {
   width: 50%;
   margin-top: 9rem;
 }
-@media only screen and (min-width: 2000px) {
-  .outerBox .innerBox .firstSection h2 {
-    font-size: 8rem;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  .outerBox .innerBox .firstSection h2 {
-    font-size: 9rem;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .outerBox .innerBox .firstSection h2 {
-    width: 100%;
-    font-size: 6rem;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .outerBox .innerBox .firstSection h2 {
-    font-size: 5rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .outerBox .innerBox .firstSection h2 {
-    font-size: 4rem;
-  }
-}
 .outerBox .innerBox .firstSection .rightColumn {
   width: 50%;
 }
@@ -646,31 +646,6 @@ footer a:hover {
   letter-spacing: 2px;
   width: 100%;
 }
-@media only screen and (min-width: 2000px) {
-  .outerBox .innerBox .thirdSection .leftColumn h2 {
-    font-size: 8rem;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  .outerBox .innerBox .thirdSection .leftColumn h2 {
-    font-size: 9rem;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .outerBox .innerBox .thirdSection .leftColumn h2 {
-    font-size: 6rem;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .outerBox .innerBox .thirdSection .leftColumn h2 {
-    font-size: 5rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .outerBox .innerBox .thirdSection .leftColumn h2 {
-    font-size: 4rem;
-  }
-}
 .outerBox .innerBox .thirdSection .leftColumn p {
   width: 80%;
   margin-top: 15rem;
@@ -771,6 +746,16 @@ footer a:hover {
   justify-content: space-between;
   align-items: start;
   margin-top: 7rem;
+  width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .outerBox .innerBox .firstSectionServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+  }
 }
 .outerBox .innerBox .firstSectionServices .popisekSluzby {
   display: flex;
@@ -779,10 +764,25 @@ footer a:hover {
   align-items: start;
   width: 50%;
 }
+@media only screen and (max-width: 1200px) {
+  .outerBox .innerBox .firstSectionServices .popisekSluzby {
+    width: 100%;
+  }
+}
 .outerBox .innerBox .firstSectionServices .popisekSluzby h2 {
   margin-top: 0;
   margin-bottom: 3rem;
   width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .outerBox .innerBox .firstSectionServices .popisekSluzby p {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .firstSectionServices .popisekSluzby p {
+    width: 100%;
+  }
 }
 .outerBox .innerBox .firstSectionServices #sluzbyImg {
   width: 60rem;
@@ -797,6 +797,18 @@ footer a:hover {
     width: 80rem;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .outerBox .innerBox .firstSectionServices #sluzbyImg {
+    position: absolute;
+    right: -200px;
+    top: -40px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .firstSectionServices #sluzbyImg {
+    display: none;
+  }
+}
 .outerBox .innerBox .secondSectionServices {
   display: flex;
   flex-direction: row;
@@ -806,6 +818,14 @@ footer a:hover {
   margin-bottom: 4rem;
   width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .secondSectionServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
 }
 .outerBox .innerBox .secondSectionServices .cardService {
   width: 25%;
@@ -818,15 +838,72 @@ footer a:hover {
   position: relative;
   overflow: hidden;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .secondSectionServices .cardService {
+    height: 50rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .secondSectionServices .cardService {
+    height: 55rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .outerBox .innerBox .secondSectionServices .cardService {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .outerBox .innerBox .secondSectionServices .cardService {
+    height: 45rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .secondSectionServices .cardService {
+    width: 80%;
+    height: auto;
+    margin-bottom: 7rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .outerBox .innerBox .secondSectionServices .cardService {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox .secondSectionServices .cardService {
+    width: 100%;
+  }
+}
 .outerBox .innerBox .secondSectionServices .cardService h3 {
   font-size: 2.5rem;
   color: #033755;
   text-align: center;
   letter-spacing: 1.2px;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .secondSectionServices .cardService h3 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .secondSectionServices .cardService h3 {
+    font-size: 3.6rem;
+  }
+}
 .outerBox .innerBox .secondSectionServices .cardService h4 {
   font-size: 2rem;
   color: #5974a9;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .secondSectionServices .cardService h4 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .secondSectionServices .cardService h4 {
+    font-size: 3rem;
+  }
 }
 .outerBox .innerBox .secondSectionServices .cardService .serviceCardIcon {
   position: absolute;
@@ -836,6 +913,30 @@ footer a:hover {
   color: #033755;
   opacity: 0.1;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .secondSectionServices .cardService .serviceCardIcon {
+    font-size: 32rem;
+    right: -80px;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .secondSectionServices .cardService .serviceCardIcon {
+    font-size: 36rem;
+    right: -90px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .secondSectionServices .cardService .serviceCardIcon {
+    font-size: 24rem;
+    right: -50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .outerBox .innerBox .secondSectionServices .cardService .serviceCardIcon {
+    font-size: 20rem;
+    right: -45px;
+  }
+}
 .outerBox .innerBox .thirdSectionServices {
   display: flex;
   flex-direction: column;
@@ -844,14 +945,63 @@ footer a:hover {
   width: 100%;
   margin-top: 9rem;
 }
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSectionServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .outerBox .innerBox .thirdSectionServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 4rem;
+  }
+}
 .outerBox .innerBox .thirdSectionServices .popisekSluzby {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 1200px) {
+  .outerBox .innerBox .thirdSectionServices .popisekSluzby {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+  }
+}
 .outerBox .innerBox .thirdSectionServices .popisekSluzby img {
   width: 60rem;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .thirdSectionServices .popisekSluzby img {
+    width: 70rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .thirdSectionServices .popisekSluzby img {
+    width: 80rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .outerBox .innerBox .thirdSectionServices .popisekSluzby img {
+    position: absolute;
+    left: -200px;
+    top: -40px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSectionServices .popisekSluzby img {
+    display: none;
+  }
 }
 .outerBox .innerBox .thirdSectionServices .popisekSluzby .rightColumn {
   display: flex;
@@ -860,12 +1010,32 @@ footer a:hover {
   align-items: end;
   width: 50%;
 }
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSectionServices .popisekSluzby .rightColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
 .outerBox .innerBox .thirdSectionServices .popisekSluzby .rightColumn h2 {
   text-align: right;
   margin-top: 0;
 }
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSectionServices .popisekSluzby .rightColumn h2 {
+    text-align: left;
+  }
+}
 .outerBox .innerBox .thirdSectionServices .popisekSluzby .rightColumn p {
   text-align: right;
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSectionServices .popisekSluzby .rightColumn p {
+    width: 100%;
+    text-align: left;
+  }
 }
 .outerBox .innerBox .thirdSectionServices .industries {
   width: 100%;
@@ -874,6 +1044,15 @@ footer a:hover {
   justify-content: space-between;
   align-items: center;
   margin-top: 9rem;
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSectionServices .industries {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 6rem;
+  }
 }
 .outerBox .innerBox .thirdSectionServices .industries .industry {
   width: 25%;
@@ -886,15 +1065,72 @@ footer a:hover {
   position: relative;
   overflow: hidden;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry {
+    height: 50rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry {
+    height: 55rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry {
+    height: 45rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry {
+    width: 80%;
+    height: auto;
+    margin-bottom: 7rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry {
+    width: 100%;
+  }
+}
 .outerBox .innerBox .thirdSectionServices .industries .industry h3 {
   font-size: 2.5rem;
   color: #033755;
   text-align: center;
   letter-spacing: 1.2px;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry h3 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry h3 {
+    font-size: 3.6rem;
+  }
+}
 .outerBox .innerBox .thirdSectionServices .industries .industry h4 {
   font-size: 2rem;
   color: #5974a9;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry h4 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry h4 {
+    font-size: 3rem;
+  }
 }
 .outerBox .innerBox .thirdSectionServices .industries .industry .industryCardIcon {
   position: absolute;
@@ -903,6 +1139,30 @@ footer a:hover {
   bottom: 0;
   color: #033755;
   opacity: 0.1;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry .industryCardIcon {
+    font-size: 32rem;
+    right: -80px;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry .industryCardIcon {
+    font-size: 36rem;
+    right: -90px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry .industryCardIcon {
+    font-size: 24rem;
+    right: -50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .outerBox .innerBox .thirdSectionServices .industries .industry .industryCardIcon {
+    font-size: 20rem;
+    right: -45px;
+  }
 }
 
 /* NAVBAR */

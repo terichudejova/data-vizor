@@ -52,6 +52,27 @@
             font-size: $f-l * 3;
             color: $dark-color;
             letter-spacing: 1.5px;
+
+            @include w-2000 {
+                font-size: $f-xxxl * 2;
+            }
+
+            @include w-3000 {
+                font-size: $f-xl * 3;
+            }
+
+            @include w-1000 {
+                width: 100%;
+                font-size: $f-xl * 2;
+            }
+
+            @include w-800 {
+                font-size: $f-l * 2;
+            }
+
+            @include w-400 {
+                font-size: $f-xxxl;
+            }
         }
 
 
@@ -441,27 +462,6 @@ footer {
                 letter-spacing: 2px;
                 width: 50%;
                 margin-top: $s-xxxl;
-
-                @include w-2000 {
-                    font-size: $f-xxxl * 2;
-                }
-
-                @include w-3000 {
-                    font-size: $f-xl * 3;
-                }
-
-                @include w-1000 {
-                    width: 100%;
-                    font-size: $f-xl * 2;
-                }
-
-                @include w-800 {
-                    font-size: $f-l * 2;
-                }
-
-                @include w-400 {
-                    font-size: $f-xxxl;
-                }
             }
 
             .rightColumn {
@@ -579,26 +579,6 @@ footer {
                 h2 {
                     letter-spacing: 2px;
                     width: 100%;
-
-                    @include w-2000 {
-                        font-size: $f-xxxl * 2;
-                    }
-    
-                    @include w-3000 {
-                        font-size: $f-xl * 3;
-                    }
-
-                    @include w-1000 {
-                        font-size: $f-xl * 2;
-                    }
-
-                    @include w-800 {
-                        font-size: $f-l * 2;
-                    }
-
-                    @include w-400 {
-                        font-size: $f-xxxl;
-                    }
                 }
 
                 p {
@@ -709,15 +689,35 @@ footer {
         .firstSectionServices {
             @include row-between-start;
             margin-top: $s-xxl;
+            width: 100%;
+
+            @include w-1200 {
+                @include column-start-center;
+                position: relative;
+            }
 
             .popisekSluzby {
                 @include column-start-start;
                 width: 50%;
 
+                @include w-1200 {
+                    width: 100%;
+                }
+
                 h2 {
                     margin-top: 0;
                     margin-bottom: $s-s;
                     width: 100%;
+                }
+
+                p {
+                    @include w-1200 {
+                        width: 50%;
+                    }
+
+                    @include w-1000 {
+                        width: 100%;
+                    }
                 }
             }
 
@@ -731,6 +731,16 @@ footer {
                 @include w-3000 {
                     width: 80rem;;
                 }
+
+                @include w-1200 {
+                    position: absolute;
+                    right: -200px;
+                    top: -40px;
+                }
+
+                @include w-1000 {
+                    display: none;
+                }
             }
         }
 
@@ -741,28 +751,23 @@ footer {
             width: 100%;
             height: auto;
 
+            @include w-1000 {
+                @include column-start-center;
+            }
+
             .cardService {
                 @include card;
 
                 h3 {
-                    font-size: $f-l;
-                    color: $hover-color;
-                    text-align: center;
-                    letter-spacing: 1.2px;
+                    @include h3card;
                 }
 
                 h4 {
-                    font-size: $f-m;
-                    color: $dark-color;
+                    @include h4card;
                 }
 
                 .serviceCardIcon {
-                    position: absolute;
-                    font-size: $f-xxxl * 7;
-                    right: -70px;
-                    bottom: 0;
-                    color: $hover-color;
-                    opacity: 0.1;
+                    @include cardIcon;
                 }
             }
         }
@@ -772,24 +777,71 @@ footer {
             width: 100%;
             margin-top: $s-xxxl;
 
+            @include w-1000 {
+                @include column-start-center;
+                margin-top: $s-xl;
+            }
+
+            @include w-600 {
+                @include column-start-center;
+                margin-top: $s-m;
+            }
+
             .popisekSluzby {
                 @include row-between-center;
 
+                @include w-1200 {
+                    position: relative;
+                    @include column-start-end;
+                }
+
                 img {
                     width: 60rem;
+
+                    @include w-2000 {
+                        width: 70rem;;
+                    }
+    
+                    @include w-3000 {
+                        width: 80rem;;
+                    }
+
+                    @include w-1200 {
+                        position: absolute;
+                        left: -200px;
+                        top: -40px;
+                    }
+
+                    @include w-1000 {
+                        display: none;
+                    }
                 }
 
                 .rightColumn {
                     @include column-start-end;
                         width: 50%;
 
+                        @include w-1000 {
+                            width: 100%;
+                            @include column-start-start;
+                        }
+
                     h2 {
                         text-align: right;
                         margin-top: 0;
+
+                        @include w-1000 {
+                            text-align: left;
+                        }
                     }
         
                     p {
                         text-align: right;
+
+                        @include w-1000 {
+                            width: 100%;
+                            text-align: left;
+                        }
                     }
                 }
             }
@@ -799,28 +851,24 @@ footer {
                 @include row-between-center;
                 margin-top: $s-xxxl;
 
+                @include w-1000 {
+                    @include column-start-center;
+                    margin-top: $s-xl;
+                }
+
                 .industry {
                     @include card;
 
                     h3 {
-                        font-size: $f-l;
-                        color: $hover-color;
-                        text-align: center;
-                        letter-spacing: 1.2px;
+                        @include h3card;
                     }
 
                     h4 {
-                        font-size: $f-m;
-                        color: $dark-color;
+                        @include h4card;
                     }
 
                     .industryCardIcon {
-                        position: absolute;
-                        font-size: $f-xxxl * 7;
-                        right: -70px;
-                        bottom: 0;
-                        color: $hover-color;
-                        opacity: 0.1;
+                        @include cardIcon;
                     }
                 }
             }
