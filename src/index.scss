@@ -455,7 +455,7 @@ footer {
             margin-top: $s-l;
 
             @include w-1000 {
-                @include column-start-center;
+                @include column-start-start;
             }
             
             h2 {
