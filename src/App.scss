@@ -49,6 +49,13 @@ $main-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
     align-items: center;
 }
 
+@mixin column-start-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
 @mixin row-center-center {
     display: flex;
     flex-direction: row;

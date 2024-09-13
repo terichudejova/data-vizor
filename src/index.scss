@@ -435,14 +435,19 @@ footer {
         }
 
         .firstSection {
-            @include row-between-center;
+            @include row-between-start;
             margin-top: $s-l;
+
+            @include w-1000 {
+                @include column-start-center;
+            }
             
             h2 {
                 font-size: $f-l * 3;
                 color: $dark-color;
                 letter-spacing: 2px;
                 width: 50%;
+                margin-top: $s-xxxl;
 
                 @include w-2000 {
                     font-size: $f-xxxl * 2;
@@ -451,10 +456,27 @@ footer {
                 @include w-3000 {
                     font-size: $f-xl * 3;
                 }
+
+                @include w-1000 {
+                    width: 100%;
+                    font-size: $f-xl * 2;
+                }
+
+                @include w-800 {
+                    font-size: $f-l * 2;
+                }
+
+                @include w-400 {
+                    font-size: $f-xxxl;
+                }
             }
 
             .rightColumn {
                 width: 50%;
+
+                @include w-1000 {
+                    width: 100%;
+                }
 
                 span {
                     font-weight: 600;
@@ -470,6 +492,10 @@ footer {
                     @include w-3000 {
                         font-size: $f-xl;
                     }
+
+                    @include w-400 {
+                        font-size: $f-s;
+                    }
                 }
             }
         }
@@ -479,16 +505,37 @@ footer {
             margin-top: $s-xxl;
             width: 100%;
 
+            @include w-800 {
+                @include column-start-center;
+            }
+
             #austinImg {
-                width: 50rem;
+                width: 40%;
                 height: auto;
                 border-radius: 16px;
                 box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 20px;
+
+                @include w-800 {
+                    width: 80%;
+                    margin-bottom: $s-xxxl;
+                }
+
+                @include w-400 {
+                    width: 100%;
+                }
             }
 
             .quoteSection {
                 position: relative;
                 width: 50%;
+
+                @include w-1000 {
+                    width: 55%;
+                }
+
+                @include w-800 {
+                    width: 100%;
+                }
 
                 .quoteIcon {
                     font-size: $f-l * 4;
@@ -496,6 +543,14 @@ footer {
                     position: absolute;
                     bottom: -60px;
                     right: 0;
+
+                    @include w-1000 {
+                        font-size: $f-l * 3;
+                    }
+
+                    @include w-400 {
+                        font-size: $f-l * 3;
+                    }
                 }
 
                 .quoteIcon:nth-of-type(1) {
@@ -517,6 +572,16 @@ footer {
                     @include w-3000 {
                         font-size: $f-l * 2;
                     }
+
+                    @include w-1000 {
+                        font-size: $f-xl;
+                        padding: 0 $s-xs;
+                    }
+
+                    @include w-400 {
+                        font-size: $f-l;
+                        padding: 0;
+                    }
                 }
             }
         }
@@ -527,8 +592,16 @@ footer {
             margin-bottom: $s-xxl;
             width: 100%;
 
+            @include w-1000 {
+                @include column-start-start;
+            }
+
             .leftColumn {
                 width: 50%;
+
+                @include w-1000 {
+                    width: 100%;
+                }
 
                 h2 {
                     font-size: $f-l * 3;
@@ -542,6 +615,18 @@ footer {
     
                     @include w-3000 {
                         font-size: $f-xl * 3;
+                    }
+
+                    @include w-1000 {
+                        font-size: $f-xl * 2;
+                    }
+
+                    @include w-800 {
+                        font-size: $f-l * 2;
+                    }
+
+                    @include w-400 {
+                        font-size: $f-xxxl;
                     }
                 }
 
@@ -562,6 +647,17 @@ footer {
                     @include w-3000 {
                         font-size: $f-xl;
                     }
+
+                    @include w-1000 {
+                        margin-top: $s-l;
+                        width: 100%;
+                        border: none;
+                    }
+
+                    @include w-400 {
+                        font-size: $f-s;
+                        margin-top: 0;
+                    }
                     
                     span {
                         font-weight: 600;
@@ -576,6 +672,12 @@ footer {
                 margin-left: $s-xl;
                 border-left: $hover-color solid 3px;
                 height: auto;
+                box-sizing: border-box;
+
+                @include w-1000 {
+                    width: 80%;
+                    margin-left: $s-s;
+                }
     
                 .timelineSection {
                     @include row-start-start;
@@ -621,6 +723,10 @@ footer {
                             @include w-3000 {
                                 font-size: $f-xl;
                             }
+
+                            @include w-400 {
+                                font-size: $f-s;
+                            }
                         }
     
                         .timelineLine {
@@ -628,6 +734,10 @@ footer {
                             height: 2px;
                             border-radius: 20px;
                             background-color: $light-color;
+
+                            @include w-400 {
+                                width: 10rem;
+                            }
                         }
                     }
                 }

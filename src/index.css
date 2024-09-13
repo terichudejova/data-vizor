@@ -481,14 +481,23 @@ footer a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   margin-top: 5rem;
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .firstSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
 }
 .outerBox .innerBox .firstSection h2 {
   font-size: 7.5rem;
   color: #5974a9;
   letter-spacing: 2px;
   width: 50%;
+  margin-top: 9rem;
 }
 @media only screen and (min-width: 2000px) {
   .outerBox .innerBox .firstSection h2 {
@@ -500,8 +509,29 @@ footer a:hover {
     font-size: 9rem;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .firstSection h2 {
+    width: 100%;
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .outerBox .innerBox .firstSection h2 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox .firstSection h2 {
+    font-size: 4rem;
+  }
+}
 .outerBox .innerBox .firstSection .rightColumn {
   width: 50%;
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .firstSection .rightColumn {
+    width: 100%;
+  }
 }
 .outerBox .innerBox .firstSection .rightColumn span {
   font-weight: 600;
@@ -519,6 +549,11 @@ footer a:hover {
     font-size: 3rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox .firstSection .rightColumn p {
+    font-size: 1.8rem;
+  }
+}
 .outerBox .innerBox .secondSection {
   display: flex;
   flex-direction: row;
@@ -527,15 +562,44 @@ footer a:hover {
   margin-top: 7rem;
   width: 100%;
 }
+@media only screen and (max-width: 800px) {
+  .outerBox .innerBox .secondSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
 .outerBox .innerBox .secondSection #austinImg {
-  width: 50rem;
+  width: 40%;
   height: auto;
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 20px;
 }
+@media only screen and (max-width: 800px) {
+  .outerBox .innerBox .secondSection #austinImg {
+    width: 80%;
+    margin-bottom: 9rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox .secondSection #austinImg {
+    width: 100%;
+  }
+}
 .outerBox .innerBox .secondSection .quoteSection {
   position: relative;
   width: 50%;
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .secondSection .quoteSection {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .outerBox .innerBox .secondSection .quoteSection {
+    width: 100%;
+  }
 }
 .outerBox .innerBox .secondSection .quoteSection .quoteIcon {
   font-size: 10rem;
@@ -543,6 +607,16 @@ footer a:hover {
   position: absolute;
   bottom: -60px;
   right: 0;
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .secondSection .quoteSection .quoteIcon {
+    font-size: 7.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox .secondSection .quoteSection .quoteIcon {
+    font-size: 7.5rem;
+  }
 }
 .outerBox .innerBox .secondSection .quoteSection .quoteIcon:nth-of-type(1) {
   transform: rotate(180deg);
@@ -565,6 +639,18 @@ footer a:hover {
     font-size: 5rem;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .secondSection .quoteSection p {
+    font-size: 3rem;
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox .secondSection .quoteSection p {
+    font-size: 2.5rem;
+    padding: 0;
+  }
+}
 .outerBox .innerBox .thirdSection {
   display: flex;
   flex-direction: row;
@@ -574,8 +660,21 @@ footer a:hover {
   margin-bottom: 7rem;
   width: 100%;
 }
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
 .outerBox .innerBox .thirdSection .leftColumn {
   width: 50%;
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSection .leftColumn {
+    width: 100%;
+  }
 }
 .outerBox .innerBox .thirdSection .leftColumn h2 {
   font-size: 7.5rem;
@@ -591,6 +690,21 @@ footer a:hover {
 @media only screen and (min-width: 3000px) {
   .outerBox .innerBox .thirdSection .leftColumn h2 {
     font-size: 9rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSection .leftColumn h2 {
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .outerBox .innerBox .thirdSection .leftColumn h2 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox .thirdSection .leftColumn h2 {
+    font-size: 4rem;
   }
 }
 .outerBox .innerBox .thirdSection .leftColumn p {
@@ -613,6 +727,19 @@ footer a:hover {
     font-size: 3rem;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSection .leftColumn p {
+    margin-top: 5rem;
+    width: 100%;
+    border: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox .thirdSection .leftColumn p {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+}
 .outerBox .innerBox .thirdSection .leftColumn p span {
   font-weight: 600;
 }
@@ -623,6 +750,13 @@ footer a:hover {
   margin-left: 6rem;
   border-left: #033755 solid 3px;
   height: auto;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .thirdSection .timeline {
+    width: 80%;
+    margin-left: 3rem;
+  }
 }
 .outerBox .innerBox .thirdSection .timeline .timelineSection {
   display: flex;
@@ -674,11 +808,21 @@ footer a:hover {
     font-size: 3rem;
   }
 }
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek p {
+    font-size: 1.8rem;
+  }
+}
 .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek .timelineLine {
   width: 15rem;
   height: 2px;
   border-radius: 20px;
   background-color: #c7d9ff;
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek .timelineLine {
+    width: 10rem;
+  }
 }
 
 /* NAVBAR */
