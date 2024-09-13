@@ -41,11 +41,17 @@
             @include w-600 {
                 font-size: $f-s;
             }
+
+            span {
+                color: $dark-color;
+                font-weight: 600;
+            }
         }
 
         h2 {
             font-size: $f-l * 3;
             color: $dark-color;
+            letter-spacing: 1.5px;
         }
 
 
@@ -159,10 +165,6 @@ footer {
                 @include w-330 {
                     font-size: $f-l;
                 }
-
-                span {
-                    color: $hover-color;
-                }
             }
 
             #mockup {
@@ -256,7 +258,7 @@ footer {
                 line-height: 1.7;
 
                 span {
-                    font-weight: 700;
+                    color: $hover-color;
                 }
             }
         }
@@ -468,10 +470,6 @@ footer {
                 @include w-1000 {
                     width: 100%;
                 }
-
-                span {
-                    font-weight: 600;
-                }
             }
         }
 
@@ -621,10 +619,6 @@ footer {
                     @include w-400 {
                         margin-top: 0;
                     }
-                    
-                    span {
-                        font-weight: 600;
-                    }
                 }
             }
 
@@ -701,6 +695,138 @@ footer {
         
 
         
+    }
+}
+
+
+
+// SERVICES
+.outerBox {
+    .innerBox {
+        @include column-start-center;
+        margin-bottom: $s-xxxl;
+
+        .firstSectionServices {
+            @include row-between-start;
+            margin-top: $s-xxl;
+
+            .popisekSluzby {
+                @include column-start-start;
+                width: 50%;
+
+                h2 {
+                    margin-top: 0;
+                    margin-bottom: $s-s;
+                    width: 100%;
+                }
+            }
+
+            #sluzbyImg {
+                width: 60rem;
+
+                @include w-2000 {
+                    width: 70rem;;
+                }
+
+                @include w-3000 {
+                    width: 80rem;;
+                }
+            }
+        }
+
+        .secondSectionServices {
+            @include row-between-center;
+            margin-top: $s-xl;
+            margin-bottom: $s-m;
+            width: 100%;
+            height: auto;
+
+            .cardService {
+                @include card;
+
+                h3 {
+                    font-size: $f-l;
+                    color: $hover-color;
+                    text-align: center;
+                    letter-spacing: 1.2px;
+                }
+
+                h4 {
+                    font-size: $f-m;
+                    color: $dark-color;
+                }
+
+                .serviceCardIcon {
+                    position: absolute;
+                    font-size: $f-xxxl * 7;
+                    right: -70px;
+                    bottom: 0;
+                    color: $hover-color;
+                    opacity: 0.1;
+                }
+            }
+        }
+
+        .thirdSectionServices {
+            @include column-start-end;
+            width: 100%;
+            margin-top: $s-xxxl;
+
+            .popisekSluzby {
+                @include row-between-center;
+
+                img {
+                    width: 60rem;
+                }
+
+                .rightColumn {
+                    @include column-start-end;
+                        width: 50%;
+
+                    h2 {
+                        text-align: right;
+                        margin-top: 0;
+                    }
+        
+                    p {
+                        text-align: right;
+                    }
+                }
+            }
+
+            .industries {
+                width: 100%;
+                @include row-between-center;
+                margin-top: $s-xxxl;
+
+                .industry {
+                    @include card;
+
+                    h3 {
+                        font-size: $f-l;
+                        color: $hover-color;
+                        text-align: center;
+                        letter-spacing: 1.2px;
+                    }
+
+                    h4 {
+                        font-size: $f-m;
+                        color: $dark-color;
+                    }
+
+                    .industryCardIcon {
+                        position: absolute;
+                        font-size: $f-xxxl * 7;
+                        right: -70px;
+                        bottom: 0;
+                        color: $hover-color;
+                        opacity: 0.1;
+                    }
+                }
+            }
+
+            
+        }
     }
 }
 

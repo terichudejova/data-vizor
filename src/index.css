@@ -63,9 +63,14 @@ body, html {
     font-size: 1.8rem;
   }
 }
+.outerBox .innerBox p span {
+  color: #5974a9;
+  font-weight: 600;
+}
 .outerBox .innerBox h2 {
   font-size: 7.5rem;
   color: #5974a9;
+  letter-spacing: 1.5px;
 }
 
 footer {
@@ -183,9 +188,6 @@ footer a:hover {
     font-size: 2.5rem;
   }
 }
-.outerBox .innerBox .clouds h1 span {
-  color: #033755;
-}
 .outerBox .innerBox .clouds #mockup {
   width: 60rem;
   height: auto;
@@ -281,7 +283,7 @@ footer a:hover {
   line-height: 1.7;
 }
 .outerBox .innerBox .subheadline p span {
-  font-weight: 700;
+  color: #033755;
 }
 .outerBox .innerBox .benefits {
   width: 100%;
@@ -518,9 +520,6 @@ footer a:hover {
     width: 100%;
   }
 }
-.outerBox .innerBox .firstSection .rightColumn span {
-  font-weight: 600;
-}
 .outerBox .innerBox .secondSection {
   display: flex;
   flex-direction: row;
@@ -693,9 +692,6 @@ footer a:hover {
     margin-top: 0;
   }
 }
-.outerBox .innerBox .thirdSection .leftColumn p span {
-  font-weight: 600;
-}
 .outerBox .innerBox .thirdSection .timeline {
   width: 50%;
   margin-top: 4rem;
@@ -760,6 +756,153 @@ footer a:hover {
   .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek .timelineLine {
     width: 10rem;
   }
+}
+
+.outerBox .innerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 9rem;
+}
+.outerBox .innerBox .firstSectionServices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 7rem;
+}
+.outerBox .innerBox .firstSectionServices .popisekSluzby {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 50%;
+}
+.outerBox .innerBox .firstSectionServices .popisekSluzby h2 {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+.outerBox .innerBox .firstSectionServices #sluzbyImg {
+  width: 60rem;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .firstSectionServices #sluzbyImg {
+    width: 70rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .firstSectionServices #sluzbyImg {
+    width: 80rem;
+  }
+}
+.outerBox .innerBox .secondSectionServices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  height: auto;
+}
+.outerBox .innerBox .secondSectionServices .cardService {
+  width: 25%;
+  height: 40rem;
+  background-color: #c7d9ff;
+  border-radius: 16px;
+  padding: 3rem;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+.outerBox .innerBox .secondSectionServices .cardService h3 {
+  font-size: 2.5rem;
+  color: #033755;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+.outerBox .innerBox .secondSectionServices .cardService h4 {
+  font-size: 2rem;
+  color: #5974a9;
+}
+.outerBox .innerBox .secondSectionServices .cardService .serviceCardIcon {
+  position: absolute;
+  font-size: 28rem;
+  right: -70px;
+  bottom: 0;
+  color: #033755;
+  opacity: 0.1;
+}
+.outerBox .innerBox .thirdSectionServices {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  width: 100%;
+  margin-top: 9rem;
+}
+.outerBox .innerBox .thirdSectionServices .popisekSluzby {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.outerBox .innerBox .thirdSectionServices .popisekSluzby img {
+  width: 60rem;
+}
+.outerBox .innerBox .thirdSectionServices .popisekSluzby .rightColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  width: 50%;
+}
+.outerBox .innerBox .thirdSectionServices .popisekSluzby .rightColumn h2 {
+  text-align: right;
+  margin-top: 0;
+}
+.outerBox .innerBox .thirdSectionServices .popisekSluzby .rightColumn p {
+  text-align: right;
+}
+.outerBox .innerBox .thirdSectionServices .industries {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 9rem;
+}
+.outerBox .innerBox .thirdSectionServices .industries .industry {
+  width: 25%;
+  height: 40rem;
+  background-color: #c7d9ff;
+  border-radius: 16px;
+  padding: 3rem;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+.outerBox .innerBox .thirdSectionServices .industries .industry h3 {
+  font-size: 2.5rem;
+  color: #033755;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+.outerBox .innerBox .thirdSectionServices .industries .industry h4 {
+  font-size: 2rem;
+  color: #5974a9;
+}
+.outerBox .innerBox .thirdSectionServices .industries .industry .industryCardIcon {
+  position: absolute;
+  font-size: 28rem;
+  right: -70px;
+  bottom: 0;
+  color: #033755;
+  opacity: 0.1;
 }
 
 /* NAVBAR */

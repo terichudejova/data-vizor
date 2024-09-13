@@ -56,6 +56,13 @@ $main-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
     align-items: start;
 }
 
+@mixin column-start-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+}
+
 @mixin row-center-center {
     display: flex;
     flex-direction: row;
@@ -82,6 +89,18 @@ $main-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
     flex-direction: row;
     justify-content: start;
     align-items: start;
+}
+
+@mixin card {
+    width: 25%;
+    height: 40rem;
+    background-color: $light-color;
+    border-radius: 16px;
+    padding: $s-s;
+    box-sizing: border-box;
+    box-shadow: $main-shadow;
+    position: relative;
+    overflow: hidden;
 }
 
 
