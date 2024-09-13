@@ -48,6 +48,25 @@ body, html {
   font-size: 2rem;
   color: #5974a9;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox p {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox p {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .outerBox .innerBox p {
+    font-size: 1.8rem;
+  }
+}
+.outerBox .innerBox h2 {
+  font-size: 7.5rem;
+  color: #5974a9;
+}
 
 footer {
   background-color: #c7d9ff;
@@ -259,23 +278,7 @@ footer a:hover {
 }
 .outerBox .innerBox .subheadline p {
   color: #033755;
-  font-size: 2rem;
   line-height: 1.7;
-}
-@media only screen and (min-width: 2000px) {
-  .outerBox .innerBox .subheadline p {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  .outerBox .innerBox .subheadline p {
-    font-size: 3rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .outerBox .innerBox .subheadline p {
-    font-size: 1.8rem;
-  }
 }
 .outerBox .innerBox .subheadline p span {
   font-weight: 700;
@@ -413,24 +416,8 @@ footer a:hover {
   }
 }
 .outerBox .innerBox .benefits .cards .card p {
-  font-size: 2rem;
   color: #033755;
   margin-top: 0;
-}
-@media only screen and (min-width: 2000px) {
-  .outerBox .innerBox .benefits .cards .card p {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  .outerBox .innerBox .benefits .cards .card p {
-    font-size: 3rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .outerBox .innerBox .benefits .cards .card p {
-    font-size: 1.8rem;
-  }
 }
 .outerBox .innerBox .benefits .cards .cardIcon {
   color: #033755;
@@ -493,8 +480,6 @@ footer a:hover {
   }
 }
 .outerBox .innerBox .firstSection h2 {
-  font-size: 7.5rem;
-  color: #5974a9;
   letter-spacing: 2px;
   width: 50%;
   margin-top: 9rem;
@@ -535,24 +520,6 @@ footer a:hover {
 }
 .outerBox .innerBox .firstSection .rightColumn span {
   font-weight: 600;
-}
-.outerBox .innerBox .firstSection .rightColumn p {
-  font-size: 2rem;
-}
-@media only screen and (min-width: 2000px) {
-  .outerBox .innerBox .firstSection .rightColumn p {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  .outerBox .innerBox .firstSection .rightColumn p {
-    font-size: 3rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .outerBox .innerBox .firstSection .rightColumn p {
-    font-size: 1.8rem;
-  }
 }
 .outerBox .innerBox .secondSection {
   display: flex;
@@ -677,8 +644,6 @@ footer a:hover {
   }
 }
 .outerBox .innerBox .thirdSection .leftColumn h2 {
-  font-size: 7.5rem;
-  color: #5974a9;
   letter-spacing: 2px;
   width: 100%;
 }
@@ -715,17 +680,6 @@ footer a:hover {
   border-bottom: 2px solid #c7d9ff;
   padding-bottom: 2rem;
   text-align: left;
-  font-size: 2rem;
-}
-@media only screen and (min-width: 2000px) {
-  .outerBox .innerBox .thirdSection .leftColumn p {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  .outerBox .innerBox .thirdSection .leftColumn p {
-    font-size: 3rem;
-  }
 }
 @media only screen and (max-width: 1000px) {
   .outerBox .innerBox .thirdSection .leftColumn p {
@@ -736,7 +690,6 @@ footer a:hover {
 }
 @media only screen and (max-width: 400px) {
   .outerBox .innerBox .thirdSection .leftColumn p {
-    font-size: 1.8rem;
     margin-top: 0;
   }
 }
@@ -796,22 +749,6 @@ footer a:hover {
 }
 .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek p {
   width: 100%;
-  font-size: 2rem;
-}
-@media only screen and (min-width: 2000px) {
-  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek p {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek p {
-    font-size: 3rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek p {
-    font-size: 1.8rem;
-  }
 }
 .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek .timelineLine {
   width: 15rem;
@@ -856,7 +793,6 @@ nav {
   font-size: 2rem;
   padding: 1rem 2rem;
   color: #5974a9;
-  transition: color 0.2s ease-in-out;
   display: flex;
   flex-direction: row;
   justify-content: center;

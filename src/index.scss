@@ -29,7 +29,26 @@
         p {
             font-size: $f-m;
             color: $dark-color;
+
+            @include w-2000 {
+                font-size: $f-l;
+            }
+
+            @include w-3000 {
+                font-size: $f-xl;
+            }
+
+            @include w-600 {
+                font-size: $f-s;
+            }
         }
+
+        h2 {
+            font-size: $f-l * 3;
+            color: $dark-color;
+        }
+
+
       }
 }
 
@@ -234,20 +253,7 @@ footer {
         .subheadline {
             p {
                 color: $hover-color;
-                font-size: $f-m;
                 line-height: 1.7;
-
-                @include w-2000 {
-                    font-size: $f-l;
-                }
-
-                @include w-3000 {
-                    font-size: $f-xl;
-                }
-
-                @include w-600 {
-                    font-size: $f-s;
-                }
 
                 span {
                     font-weight: 700;
@@ -366,21 +372,8 @@ footer {
                     }
 
                     p {
-                        font-size: $f-m;
                         color: $hover-color;
                         margin-top: 0;
-
-                        @include w-2000 {
-                            font-size: $f-l;
-                        }
-
-                        @include w-3000 {
-                            font-size: $f-xl;
-                        }
-
-                        @include w-600 {
-                            font-size: $f-s;
-                        }
                     }
                 }
 
@@ -443,8 +436,6 @@ footer {
             }
             
             h2 {
-                font-size: $f-l * 3;
-                color: $dark-color;
                 letter-spacing: 2px;
                 width: 50%;
                 margin-top: $s-xxxl;
@@ -480,22 +471,6 @@ footer {
 
                 span {
                     font-weight: 600;
-                }
-
-                p {
-                    font-size: $f-m;
-
-                    @include w-2000 {
-                        font-size: $f-l;
-                    }
-    
-                    @include w-3000 {
-                        font-size: $f-xl;
-                    }
-
-                    @include w-400 {
-                        font-size: $f-s;
-                    }
                 }
             }
         }
@@ -604,8 +579,6 @@ footer {
                 }
 
                 h2 {
-                    font-size: $f-l * 3;
-                    color: $dark-color;
                     letter-spacing: 2px;
                     width: 100%;
 
@@ -638,15 +611,6 @@ footer {
                     border-bottom: 2px solid $light-color;
                     padding-bottom: $s-xs;
                     text-align: left;
-                    font-size: $f-m;
-    
-                    @include w-2000 {
-                        font-size: $f-l;
-                    }
-        
-                    @include w-3000 {
-                        font-size: $f-xl;
-                    }
 
                     @include w-1000 {
                         margin-top: $s-l;
@@ -655,7 +619,6 @@ footer {
                     }
 
                     @include w-400 {
-                        font-size: $f-s;
                         margin-top: 0;
                     }
                     
@@ -714,19 +677,6 @@ footer {
     
                         p {
                             width: 100%;
-                            font-size: $f-m;
-
-                            @include w-2000 {
-                                font-size: $f-l;
-                            }
-
-                            @include w-3000 {
-                                font-size: $f-xl;
-                            }
-
-                            @include w-400 {
-                                font-size: $f-s;
-                            }
                         }
     
                         .timelineLine {
@@ -782,7 +732,6 @@ footer {
     font-size: $f-m;
     padding: $s-xxs $s-xs;
     color: $dark-color;
-    transition: color 0.2s ease-in-out;
     @include row-center-center;
   }
   
