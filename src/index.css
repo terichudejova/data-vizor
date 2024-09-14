@@ -569,7 +569,7 @@ footer a:hover {
 }
 .outerBox .innerBox .secondSection .quoteSection .quoteIcon {
   font-size: 10rem;
-  color: #033755;
+  color: #ffa23f;
   position: absolute;
   bottom: -60px;
   right: 0;
@@ -594,6 +594,7 @@ footer a:hover {
   font-weight: 600;
   text-align: center;
   padding: 0 3rem;
+  color: #033755;
 }
 @media only screen and (min-width: 2000px) {
   .outerBox .innerBox .secondSection .quoteSection p {
@@ -693,7 +694,7 @@ footer a:hover {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #033755;
+  background-color: #ffa23f;
   transform: translateX(-15px);
   flex-shrink: 0;
   box-sizing: border-box;
@@ -1165,6 +1166,155 @@ footer a:hover {
   }
 }
 
+.outerBox .innerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 6rem;
+}
+.outerBox .innerBox .popisek h2 {
+  margin: 0;
+}
+.outerBox .innerBox .popisek h2 span {
+  color: #033755;
+}
+.outerBox .innerBox .offer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 9rem;
+}
+.outerBox .innerBox .offer .offerCard {
+  width: 30%;
+  height: auto;
+  background-color: #033755;
+  border-radius: 16px;
+  padding: 3rem;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+  position: relative;
+}
+.outerBox .innerBox .offer .offerCard .price {
+  background-color: #ffa23f;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 2rem;
+  border-radius: 0 16px 0 16px;
+}
+.outerBox .innerBox .offer .offerCard .price p {
+  color: #033755;
+  font-weight: 600;
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .offer .offerCard .price p {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .offer .offerCard .price p {
+    font-size: 3.6rem;
+  }
+}
+.outerBox .innerBox .offer .offerCard h3 {
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  margin-top: 7rem;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .offer .offerCard h3 {
+    font-size: 3.6rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .offer .offerCard h3 {
+    font-size: 4rem;
+  }
+}
+.outerBox .innerBox .offer .offerCard p {
+  color: #c7d9ff;
+}
+.outerBox .innerBox .offer .offerCard h4 {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .offer .offerCard h4 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .offer .offerCard h4 {
+    font-size: 3rem;
+  }
+}
+.outerBox .innerBox .offer .offerCard .features p {
+  color: #c7d9ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+.outerBox .innerBox .offer .offerCard .features p .checkIcon {
+  font-size: 3rem;
+  color: white;
+  margin-right: 2rem;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .offer .offerCard .features p .checkIcon {
+    font-size: 3.6rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .offer .offerCard .features p .checkIcon {
+    font-size: 4rem;
+  }
+}
+.outerBox .innerBox .offer .offerCard .buttonDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.outerBox .innerBox .offer .offerCard .buttonDiv button {
+  background-color: #c7d9ff;
+  color: #033755;
+  border: none;
+  cursor: pointer;
+  border-radius: 16px;
+  width: auto;
+  height: auto;
+  padding: 2rem 2rem;
+  transition: 0.3s;
+  font-size: 1.8rem;
+  border: 5px solid white;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .offer .offerCard .buttonDiv button {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .offer .offerCard .buttonDiv button {
+    font-size: 2.5rem;
+  }
+}
+.outerBox .innerBox .offer .offerCard .buttonDiv button:hover {
+  background-color: white;
+  box-shadow: 0 0 0 5px #c7d9ff;
+}
+
 /* NAVBAR */
 nav {
   position: fixed;
@@ -1237,7 +1387,7 @@ nav {
 
 .navLink.active {
   color: white;
-  background-color: #5974a9;
+  background-color: #ffa23f;
   border-radius: 16px;
 }
 

@@ -512,7 +512,7 @@ footer {
 
                 .quoteIcon {
                     font-size: $f-l * 4;
-                    color: $hover-color;
+                    color: $contrast-color;
                     position: absolute;
                     bottom: -60px;
                     right: 0;
@@ -537,6 +537,7 @@ footer {
                     font-weight: 600;
                     text-align: center;
                     padding: 0 $s-s;
+                    color: $hover-color;
 
                     @include w-2000 {
                         font-size: $f-xxxl;
@@ -624,7 +625,7 @@ footer {
                         width: 30px;
                         height: 30px;
                         border-radius: 50%;
-                        background-color: $hover-color;
+                        background-color: $contrast-color;
                         transform: translateX(-15px);
                         flex-shrink: 0;
                         box-sizing: border-box;
@@ -880,6 +881,156 @@ footer {
 
 
 
+// SERVICES
+.outerBox {
+    .innerBox {
+        @include column-start-center;
+        margin-top: $s-xl;
+
+        .popisek {
+            h2 {
+                margin: 0;
+
+                span {
+                    color: $hover-color;
+                }
+            }
+        }
+
+        .offer {
+            @include row-between-start;
+            margin-top: $s-xxxl;
+
+            .offerCard {
+                width: 30%;
+                height: auto;
+                background-color: $hover-color;
+                border-radius: 16px;
+                padding: $s-s;
+                box-sizing: border-box;
+                box-shadow: $main-shadow;
+                position: relative;
+
+                .price {
+                    background-color: $contrast-color;
+                    width: auto;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 0 $s-xs;
+                    border-radius: 0 16px 0 16px;
+
+                    p {
+                        color: $hover-color;
+                        font-weight: 600;
+                        font-family: $heading-font;
+                        font-size: $f-l;
+                        letter-spacing: 1.5px;
+
+                        @include w-2000 {
+                            font-size: $f-xl;
+                        }
+    
+                        @include w-3000 {
+                            font-size: $f-xxl;
+                        }
+                    }
+                }
+
+                h3 {
+                    color: $main-color;
+                    font-size: $f-xl;
+                    letter-spacing: 1.5px;
+                    margin-top: $s-xxl;
+
+                    @include w-2000 {
+                        font-size: $f-xxl;
+                    }
+
+                    @include w-3000 {
+                        font-size: $f-xxxl;
+                    }
+                }
+
+                p {
+                    color: $light-color;
+                }
+
+                h4 {
+                    color: $main-color;
+                    font-size: $f-m;
+                    letter-spacing: 1.5px;
+
+                    @include w-2000 {
+                        font-size: $f-l;
+                    }
+
+                    @include w-3000 {
+                        font-size: $f-xl;
+                    }
+                }
+
+                .features {
+                    p {
+                        color: $light-color;
+                        @include row-start-start;
+
+                        .checkIcon {
+                            font-size: $f-xl;
+                            color: $main-color;
+                            margin-right: $s-xs;
+
+                            @include w-2000 {
+                                font-size: $f-xxl;
+                            }
+        
+                            @include w-3000 {
+                                font-size: $f-xxxl;
+                            }
+                        }
+                    }
+                }
+
+                .buttonDiv {
+                    width: 100%;
+                    @include row-center-center;
+                    margin-top: $s-m;
+
+                    button {
+                        background-color: $light-color;
+                        color: $hover-color;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 16px;
+                        width: auto;
+                        height: auto;
+                        padding: $s-xs $s-xs;
+                        transition: 0.3s;
+                        font-size: $f-s;
+                        border: 5px solid $main-color;
+                        box-sizing: border-box;
+
+                        @include w-2000 {
+                            font-size: $f-m;
+                        }
+    
+                        @include w-3000 {
+                            font-size: $f-l;
+                        }
+                    }
+                      
+                    button:hover {
+                        background-color: $main-color;
+                        box-shadow: 0 0 0 5px $light-color;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+
+
   
   /* NAVBAR */
   nav {
@@ -943,7 +1094,7 @@ footer {
   
   .navLink.active {
     color: $main-color;
-    background-color: $dark-color;
+    background-color: $contrast-color;
     border-radius: 16px;
   }
   
