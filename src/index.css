@@ -28,6 +28,7 @@ body, html {
 .outerBox .innerBox {
   width: 80%;
   min-height: 100vh;
+  margin-top: 6rem;
 }
 @media only screen and (min-width: 2000px) {
   .outerBox .innerBox {
@@ -37,6 +38,11 @@ body, html {
 @media only screen and (min-width: 3000px) {
   .outerBox .innerBox {
     width: 60%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox {
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -504,6 +510,11 @@ footer a:hover {
   width: 50%;
   margin-top: 9rem;
 }
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .firstSection h2 {
+    margin-top: 0;
+  }
+}
 .outerBox .innerBox .firstSection .rightColumn {
   width: 50%;
 }
@@ -738,7 +749,7 @@ footer a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
-  margin-top: 7rem;
+  margin-top: 5rem;
   width: 100%;
 }
 @media only screen and (max-width: 1200px) {
@@ -1163,7 +1174,9 @@ footer a:hover {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-top: 6rem;
+}
+.outerBox .innerBox .popisek {
+  margin-top: 5rem;
 }
 .outerBox .innerBox .popisek h2 {
   margin: 0;
@@ -1337,6 +1350,7 @@ footer a:hover {
   min-height: auto;
 }
 .outerBox .innerBox .contactPopisek {
+  margin-top: 5rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1672,6 +1686,7 @@ nav {
     letter-spacing: 1.8px;
     font-weight: 600;
     margin-top: 4rem;
+    text-decoration: none;
   }
 }
 @media only screen and (max-width: 1000px) and (max-width: 600px) {

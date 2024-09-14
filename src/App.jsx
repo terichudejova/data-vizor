@@ -52,12 +52,10 @@ function App() {
       };
   }, []);
 
-
-  //Sescrolluj nahoru, když klikne na DataVizor
   function toTop() {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // Animovaný přechod nahoru
+        behavior: 'smooth'
     });
 }
 
@@ -71,7 +69,7 @@ function App() {
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
-        <p id='companyName' onClick={toTop}>DataVizor</p>
+        <NavLink id='companyName' to="/data-vizor/" end onClick={toTop}>DataVizor</NavLink>
         <div ref={navRef}  className={`nav-links ${isOpen ? 'show' : ''}`}>
           <NavLink to="/data-vizor/" end className="navLink" onClick={toggleMenu} id='homeLink'>DataVizor <CloudIcon className='cloudIcon'/></NavLink>
           <NavLink to="/data-vizor/about" className="navLink" onClick={toggleMenu}>About Us</NavLink>

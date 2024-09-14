@@ -11,6 +11,7 @@
     .innerBox {
         width: 80%;
         min-height: 100vh;
+        margin-top: $s-xl;
 
         @include w-2000 {
             width: 70%;
@@ -18,6 +19,10 @@
 
         @include w-3000 {
             width: 60%;
+        }
+
+        @include w-1000 {
+            margin-top: 0;
         }
 
         @include w-400 {
@@ -456,6 +461,10 @@ footer {
                 letter-spacing: 2px;
                 width: 50%;
                 margin-top: $s-xxxl;
+
+                @include w-1000 {
+                    margin-top: 0;
+                }
             }
 
             .rightColumn {
@@ -683,7 +692,7 @@ footer {
 
         .firstSectionServices {
             @include row-between-start;
-            margin-top: $s-xxl;
+            margin-top: $s-l;
             width: 100%;
 
             @include w-1200 {
@@ -879,9 +888,10 @@ footer {
 .outerBox {
     .innerBox {
         @include column-start-center;
-        margin-top: $s-xl;
 
         .popisek {
+            margin-top: $s-l;
+
             h2 {
                 margin: 0;
 
@@ -1050,6 +1060,7 @@ footer {
         min-height: auto;
 
         .contactPopisek {
+            margin-top: $s-l;
             width: 100%;
             @include column-start-start;
 
@@ -1362,6 +1373,7 @@ footer {
         letter-spacing: 1.8px;
         font-weight: 600;
         margin-top: $s-m;
+        text-decoration: none;
 
         @include w-600 {
             font-size: $f-m;
