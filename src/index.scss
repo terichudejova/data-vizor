@@ -901,6 +901,10 @@ footer {
             @include row-between-start;
             margin-top: $s-xxxl;
 
+            @include w-1000 {
+                @include column-start-center;
+            }
+
             .offerCard {
                 width: 30%;
                 height: auto;
@@ -910,6 +914,19 @@ footer {
                 box-sizing: border-box;
                 box-shadow: $main-shadow;
                 position: relative;
+
+                @include w-1000 {
+                    width: 60%;
+                    margin-bottom: $s-xxl;
+                }
+
+                @include w-800 {
+                    width: 80%;
+                }
+
+                @include w-600 {
+                    width: 90%;
+                }
 
                 .price {
                     background-color: $contrast-color;

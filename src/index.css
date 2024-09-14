@@ -1186,6 +1186,14 @@ footer a:hover {
   align-items: start;
   margin-top: 9rem;
 }
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
 .outerBox .innerBox .offer .offerCard {
   width: 30%;
   height: auto;
@@ -1195,6 +1203,22 @@ footer a:hover {
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
   position: relative;
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .innerBox .offer .offerCard {
+    width: 60%;
+    margin-bottom: 7rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .outerBox .innerBox .offer .offerCard {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .outerBox .innerBox .offer .offerCard {
+    width: 90%;
+  }
 }
 .outerBox .innerBox .offer .offerCard .price {
   background-color: #ffa23f;
