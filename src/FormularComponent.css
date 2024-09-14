@@ -16,11 +16,11 @@ body, html {
 
 /* Styling celého formuláře */
 .formularObject {
-  background: white;
-  padding: 20px 30px;
+  background: #033755;
+  padding: 4rem 4rem;
   border-radius: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 60rem;
+  width: 100%;
   height: auto;
   box-sizing: border-box;
   margin: 0;
@@ -37,17 +37,17 @@ body, html {
 .inputStyle {
   width: 100%;
   padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ddd;
+  margin-bottom: 3rem;
+  border: #c7d9ff 3px solid;
   border-radius: 10px;
   box-sizing: border-box;
-  background-color: rgb(239, 255, 239);
+  background-color: #c7d9ff;
   font-size: 1.8rem;
   font-family: "Work Sans", sans-serif;
 }
 
 .inputStyle:focus {
-  border: #033755 1px solid;
+  border: #ffa23f 3px solid;
   outline: none;
 }
 
@@ -55,19 +55,28 @@ body, html {
 .textArea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ddd;
+  margin-bottom: 3rem;
+  border: #c7d9ff 3px solid;
   border-radius: 10px;
   min-height: 100px;
   box-sizing: border-box;
-  background-color: rgb(239, 255, 239);
+  background-color: #c7d9ff;
   font-size: 1.8rem;
   font-family: "Work Sans", sans-serif;
 }
 
 .textArea:focus {
-  border: #033755 1px solid;
+  border: #ffa23f 3px solid;
   outline: none;
+}
+
+.checkboxStyle {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.checkboxStyle:checked {
+  accent-color: #ffa23f;
 }
 
 /* Barva možností */
@@ -77,26 +86,25 @@ select {
 
 /* Styl pro tlačítko */
 .formularButton {
-  width: 150px;
-  height: 50px;
-  border: none;
-  color: white;
   background-color: #c7d9ff;
-  font-weight: 600;
-  font-size: 1.8rem;
-  position: relative;
-  overflow: hidden;
-  border-radius: 16px;
+  color: #033755;
+  border: none;
   cursor: pointer;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.247);
-  transition: all 0.2s ease-in-out;
-  margin-top: 2rem;
+  border-radius: 16px;
+  width: auto;
+  height: auto;
+  padding: 2rem 2rem;
+  transition: 0.3s;
+  font-size: 1.8rem;
+  border: 5px solid white;
+  box-sizing: border-box;
+  font-weight: 600;
+  margin-top: 4rem;
 }
 
 .formularButton:hover {
-  background-color: rgb(88, 94, 88);
-  color: white;
-  transform: scale(1.03);
+  background-color: white;
+  box-shadow: 0 0 0 5px #c7d9ff;
 }
 
 /* Efekt při kliknutí */
@@ -107,8 +115,12 @@ select {
 
 /* Styl labelů (popisků) */
 .label {
-  margin-bottom: 2rem;
-  color: #033755;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.label span {
+  color: #ffa23f;
 }
 
 /* Media Queries */

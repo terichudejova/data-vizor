@@ -6,7 +6,7 @@ const FormularComponent = () => {
     const [email, setEmail] = useState('');
     const [plan, setPlan] = useState('');
     const [message, setMessage] = useState('');
-    const [subscription, setSubscription] = useState(false);
+    const [subscription, setSubscription] = useState(true);
     const [consent, setConsent] = useState(false);
 
 
@@ -37,7 +37,7 @@ const FormularComponent = () => {
                 setEmail('');
                 setPlan('');
                 setMessage('');
-                setSubscription(false);
+                setSubscription(true);
                 setConsent(false);
             })
             .catch((error) => {
@@ -102,7 +102,7 @@ const FormularComponent = () => {
                     onChange={(e) => setSubscription(e.target.checked)}
                     className="checkboxStyle"
                 />
-                Subscribe to our newsletter.
+                Subscribe to our <span>newsletter</span>.
             </label>
 
             <label htmlFor="consent" className="label">
@@ -115,10 +115,10 @@ const FormularComponent = () => {
                     required
                     className="checkboxStyle"
                 />
-                I agree to the processing of my personal data in accordance with GDPR and the Privacy Policy.
+                I agree to the processing of my personal data in accordance with <span>GDPR</span> and the <span>Privacy Policy</span>.
             </label>
 
-            <button type="submit" className="formularButton">Odeslat</button>
+            <button type="submit" className="formularButton">Let Us Know</button>
         </form>
     );
 };

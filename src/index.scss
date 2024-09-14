@@ -186,6 +186,10 @@ footer {
                 @include w-330 {
                     font-size: $f-l;
                 }
+
+                span {
+                    color: $hover-color;
+                }
             }
 
             #mockup {
@@ -1013,7 +1017,7 @@ footer {
                     @include row-center-center;
                     margin-top: $s-m;
 
-                    button {
+                    .pricesButton {
                         background-color: $light-color;
                         color: $hover-color;
                         border: none;
@@ -1026,6 +1030,8 @@ footer {
                         font-size: $f-s;
                         border: 5px solid $main-color;
                         box-sizing: border-box;
+                        font-weight: 600;
+                        text-decoration: none;
 
                         @include w-2000 {
                             font-size: $f-m;
@@ -1036,7 +1042,7 @@ footer {
                         }
                     }
                       
-                    button:hover {
+                    .pricesButton:hover {
                         background-color: $main-color;
                         box-shadow: 0 0 0 5px $light-color;
                     }
@@ -1047,6 +1053,120 @@ footer {
 } 
 
 
+
+// CONTACT US
+.outerBox {
+    .innerBox {
+        .contactPopisek {
+            width: 100%;
+            @include column-start-start;
+
+            h2 {
+                margin: 0;
+
+                span {
+                    color: $hover-color;
+                }
+            }
+        }
+
+        .formular {
+            margin-top: $s-xxl;
+            width: 100%;
+            @include column-start-center;
+        }
+    }
+
+    .contactInfo {
+        @include column-start-center;
+        background-color: $light-color;
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            min-width: 30%;
+            height: auto;
+            right: 0;
+            top: -20%;
+        }
+
+        .popisek {
+            width: 90%;
+            margin-bottom: $s-xxl;
+
+            @include w-2000 {
+                width: 85%;
+            }
+
+            @include w-3000 {
+                width: 80%;
+            }
+
+            @include w-400 {
+                width: 92%;
+            }
+
+            h2 {
+                font-size: $f-l * 3;
+                color: $hover-color;
+                letter-spacing: 1.5px;
+    
+                @include w-2000 {
+                    font-size: $f-xxxl * 2;
+                }
+    
+                @include w-3000 {
+                    font-size: $f-xl * 3;
+                }
+    
+                @include w-1000 {
+                    width: 100%;
+                    font-size: $f-xl * 2;
+                }
+    
+                @include w-800 {
+                    font-size: $f-l * 2;
+                }
+    
+                @include w-400 {
+                    font-size: $f-xxxl;
+                }
+            }
+
+            h3 {
+                font-size: $f-xxl;
+                color: $dark-color;
+                margin-bottom: $s-xs;
+            }
+            
+            a {
+                font-size: $f-m;
+                @include row-start-start;
+                margin-bottom: $s-xs;
+                color: $hover-color;
+                text-decoration: none;
+
+                .contactIcon {
+                    font-size: $f-l;
+                    margin-right: $s-xxs;
+                }
+            }
+
+            a:hover {
+                cursor: pointer;
+                color: $contrast-color;
+            }
+        }
+    }
+
+    .contactFooter {
+        background-color: $main-color;
+    }
+    
+}
 
   
   /* NAVBAR */

@@ -1,4 +1,5 @@
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { NavLink } from 'react-router-dom';
 
 export default function Prices() {
     return (
@@ -24,7 +25,9 @@ export default function Prices() {
                             <p><CheckCircleIcon className='checkIcon'/> No credit card required to start.</p>
                         </div>
                         <div className="buttonDiv">
-                            <button>Start Your Free Trial</button>
+                            <NavLink to="/data-vizor/contact" className="pricesButton">
+                                Start Your Free Trial
+                            </NavLink>
                         </div>
                     </div>
 
@@ -42,7 +45,9 @@ export default function Prices() {
                             <p><CheckCircleIcon className='checkIcon'/> Email support.</p>
                         </div>
                         <div className="buttonDiv">
-                            <button>Choose Standard Now</button>
+                            <NavLink to="/data-vizor/contact" className="pricesButton">
+                                Choose Standard Now
+                            </NavLink>
                         </div>
                     </div>
 
@@ -61,12 +66,17 @@ export default function Prices() {
                             <p><CheckCircleIcon className='checkIcon'/> Integration with 3rd-party tools and services (API access).</p>
                         </div>
                         <div className="buttonDiv">
-                            <button>Choose Premium Now</button>
+                            <NavLink to="/data-vizor/contact" className="pricesButton">
+                                Choose Premium Now
+                            </NavLink>
                         </div>
                     </div>
 
                 </div>
             </div>
+            <footer>
+                <a href='https://www.terezachudejova.cz/' target='_isBlank'>© Tereza Chudějová, 2024</a>
+            </footer>
         </div>
     )
 }

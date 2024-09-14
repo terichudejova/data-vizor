@@ -214,6 +214,9 @@ footer a:hover {
     font-size: 2.5rem;
   }
 }
+.outerBox .innerBox .clouds h1 span {
+  color: #033755;
+}
 .outerBox .innerBox .clouds #mockup {
   width: 60rem;
   height: auto;
@@ -1310,7 +1313,7 @@ footer a:hover {
   align-items: center;
   margin-top: 4rem;
 }
-.outerBox .innerBox .offer .offerCard .buttonDiv button {
+.outerBox .innerBox .offer .offerCard .buttonDiv .pricesButton {
   background-color: #c7d9ff;
   color: #033755;
   border: none;
@@ -1323,20 +1326,138 @@ footer a:hover {
   font-size: 1.8rem;
   border: 5px solid white;
   box-sizing: border-box;
+  font-weight: 600;
+  text-decoration: none;
 }
 @media only screen and (min-width: 2000px) {
-  .outerBox .innerBox .offer .offerCard .buttonDiv button {
+  .outerBox .innerBox .offer .offerCard .buttonDiv .pricesButton {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 3000px) {
-  .outerBox .innerBox .offer .offerCard .buttonDiv button {
+  .outerBox .innerBox .offer .offerCard .buttonDiv .pricesButton {
     font-size: 2.5rem;
   }
 }
-.outerBox .innerBox .offer .offerCard .buttonDiv button:hover {
+.outerBox .innerBox .offer .offerCard .buttonDiv .pricesButton:hover {
   background-color: white;
   box-shadow: 0 0 0 5px #c7d9ff;
+}
+
+.outerBox .innerBox .contactPopisek {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.outerBox .innerBox .contactPopisek h2 {
+  margin: 0;
+}
+.outerBox .innerBox .contactPopisek h2 span {
+  color: #033755;
+}
+.outerBox .innerBox .formular {
+  margin-top: 7rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.outerBox .contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #c7d9ff;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.outerBox .contactInfo img {
+  position: absolute;
+  min-width: 30%;
+  height: auto;
+  right: 0;
+  top: -20%;
+}
+.outerBox .contactInfo .popisek {
+  width: 90%;
+  margin-bottom: 7rem;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .contactInfo .popisek {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .contactInfo .popisek {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .contactInfo .popisek {
+    width: 92%;
+  }
+}
+.outerBox .contactInfo .popisek h2 {
+  font-size: 7.5rem;
+  color: #033755;
+  letter-spacing: 1.5px;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .contactInfo .popisek h2 {
+    font-size: 8rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .contactInfo .popisek h2 {
+    font-size: 9rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .contactInfo .popisek h2 {
+    width: 100%;
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .outerBox .contactInfo .popisek h2 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerBox .contactInfo .popisek h2 {
+    font-size: 4rem;
+  }
+}
+.outerBox .contactInfo .popisek h3 {
+  font-size: 3.6rem;
+  color: #5974a9;
+  margin-bottom: 2rem;
+}
+.outerBox .contactInfo .popisek a {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 2rem;
+  color: #033755;
+  text-decoration: none;
+}
+.outerBox .contactInfo .popisek a .contactIcon {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+.outerBox .contactInfo .popisek a:hover {
+  cursor: pointer;
+  color: #ffa23f;
+}
+.outerBox .contactFooter {
+  background-color: white;
 }
 
 /* NAVBAR */
