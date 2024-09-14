@@ -32,7 +32,7 @@ const FormularComponent = () => {
             mode: 'no-cors',
         })
             .then(() => {
-                alert('Děkujeme za vyplnění formuláře.');
+                alert('Thank you for choosing us.');
                 setName('');
                 setEmail('');
                 setPlan('');
@@ -41,7 +41,7 @@ const FormularComponent = () => {
                 setConsent(false);
             })
             .catch((error) => {
-                console.error('Chyba při odesílání formuláře:', error);
+                console.error('Error:', error);
             });
     };
 
