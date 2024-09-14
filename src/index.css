@@ -26,17 +26,17 @@ body, html {
   height: auto;
 }
 .outerBox .innerBox {
-  width: 90%;
+  width: 80%;
   min-height: 100vh;
 }
 @media only screen and (min-width: 2000px) {
   .outerBox .innerBox {
-    width: 85%;
+    width: 70%;
   }
 }
 @media only screen and (min-width: 3000px) {
   .outerBox .innerBox {
-    width: 80%;
+    width: 60%;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -483,17 +483,6 @@ footer a:hover {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 90%;
-}
-@media only screen and (min-width: 2000px) {
-  .outerBox .innerBox {
-    width: 70%;
-  }
-}
-@media only screen and (min-width: 3000px) {
-  .outerBox .innerBox {
-    width: 60%;
-  }
 }
 .outerBox .innerBox .firstSection {
   display: flex;
@@ -1344,6 +1333,9 @@ footer a:hover {
   box-shadow: 0 0 0 5px #c7d9ff;
 }
 
+.outerBox .innerBox {
+  min-height: auto;
+}
 .outerBox .innerBox .contactPopisek {
   width: 100%;
   display: flex;
@@ -1359,6 +1351,7 @@ footer a:hover {
 }
 .outerBox .innerBox .formular {
   margin-top: 7rem;
+  margin-bottom: 7rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1376,6 +1369,20 @@ footer a:hover {
   position: relative;
   overflow: hidden;
 }
+@media only screen and (max-width: 1000px) {
+  .outerBox .contactInfo::before {
+    content: "";
+    background-image: url(../public/images/map3.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
 .outerBox .contactInfo img {
   position: absolute;
   min-width: 30%;
@@ -1383,18 +1390,43 @@ footer a:hover {
   right: 0;
   top: -20%;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .contactInfo img {
+    top: -80%;
+    min-width: 40%;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .contactInfo img {
+    top: -100%;
+    min-width: 40%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .outerBox .contactInfo img {
+    width: 40%;
+    height: auto;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .contactInfo img {
+    display: none;
+  }
+}
 .outerBox .contactInfo .popisek {
-  width: 90%;
+  width: 80%;
   margin-bottom: 7rem;
+  z-index: 1;
 }
 @media only screen and (min-width: 2000px) {
   .outerBox .contactInfo .popisek {
-    width: 85%;
+    width: 70%;
   }
 }
 @media only screen and (min-width: 3000px) {
   .outerBox .contactInfo .popisek {
-    width: 80%;
+    width: 60%;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -1438,6 +1470,26 @@ footer a:hover {
   color: #5974a9;
   margin-bottom: 2rem;
 }
+@media only screen and (min-width: 2000px) {
+  .outerBox .contactInfo .popisek h3 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .contactInfo .popisek h3 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .contactInfo .popisek h3 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .outerBox .contactInfo .popisek h3 {
+    font-size: 2.5rem;
+  }
+}
 .outerBox .contactInfo .popisek a {
   font-size: 2rem;
   display: flex;
@@ -1447,10 +1499,46 @@ footer a:hover {
   margin-bottom: 2rem;
   color: #033755;
   text-decoration: none;
+  max-width: 70%;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .contactInfo .popisek a {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .contactInfo .popisek a {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .outerBox .contactInfo .popisek a {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .outerBox .contactInfo .popisek a {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .outerBox .contactInfo .popisek a {
+    font-size: 1.8rem;
+  }
 }
 .outerBox .contactInfo .popisek a .contactIcon {
   font-size: 2.5rem;
   margin-right: 1rem;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .contactInfo .popisek a .contactIcon {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .contactInfo .popisek a .contactIcon {
+    font-size: 3.6rem;
+  }
 }
 .outerBox .contactInfo .popisek a:hover {
   cursor: pointer;

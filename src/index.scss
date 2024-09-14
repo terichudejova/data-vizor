@@ -9,16 +9,15 @@
     height: auto;
 
     .innerBox {
-        width: 90%;
+        width: 80%;
         min-height: 100vh;
 
         @include w-2000 {
-            width: 85%;
+            width: 70%;
         }
 
-        
         @include w-3000 {
-            width: 80%;
+            width: 60%;
         }
 
         @include w-400 {
@@ -444,15 +443,6 @@ footer {
     .innerBox {
         position: relative;
         @include column-start-center;
-        width: 90%;
-
-        @include w-2000 {
-            width: 70%;
-        }
-
-        @include w-3000 {
-            width: 60%;
-        }
 
         .firstSection {
             @include row-between-start;
@@ -1057,6 +1047,8 @@ footer {
 // CONTACT US
 .outerBox {
     .innerBox {
+        min-height: auto;
+
         .contactPopisek {
             width: 100%;
             @include column-start-start;
@@ -1072,6 +1064,7 @@ footer {
 
         .formular {
             margin-top: $s-xxl;
+            margin-bottom: $s-xxl;
             width: 100%;
             @include column-start-center;
         }
@@ -1085,26 +1078,62 @@ footer {
         position: relative;
         overflow: hidden;
 
+        @include w-1000 {
+            &::before {
+                content: '';
+                background-image: url(../public/images/map3.png);
+                background-position: center;
+                background-size: cover;
+                opacity: 0.2;  // nastaví průhlednost obrázku
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
         img {
             position: absolute;
             min-width: 30%;
             height: auto;
             right: 0;
             top: -20%;
-        }
-
-        .popisek {
-            width: 90%;
-            margin-bottom: $s-xxl;
 
             @include w-2000 {
-                width: 85%;
+                top: -80%;
+                min-width: 40%;
             }
 
             @include w-3000 {
-                width: 80%;
+                top: -100%;
+                min-width: 40%;
             }
 
+            @include w-1400 {
+                width: 40%;
+                height: auto;
+                top: 0;
+            }
+
+            @include w-1000 {
+                display: none;
+            }
+        }
+
+        .popisek {
+            width: 80%;
+            margin-bottom: $s-xxl;
+            z-index: 1;
+
+            @include w-2000 {
+                width: 70%;
+            }
+    
+            @include w-3000 {
+                width: 60%;
+            }
+    
             @include w-400 {
                 width: 92%;
             }
@@ -1140,6 +1169,22 @@ footer {
                 font-size: $f-xxl;
                 color: $dark-color;
                 margin-bottom: $s-xs;
+
+                @include w-2000 {
+                    font-size: $f-xxxl;
+                }
+    
+                @include w-3000 {
+                    font-size: $f-l * 2;
+                }
+
+                @include w-1000 {
+                    font-size: $f-xl;
+                }
+
+                @include w-600 {
+                    font-size: $f-l;
+                }
             }
             
             a {
@@ -1148,10 +1193,39 @@ footer {
                 margin-bottom: $s-xs;
                 color: $hover-color;
                 text-decoration: none;
+                max-width: 70%;
+
+                @include w-2000 {
+                    font-size: $f-l;
+                }
+    
+                @include w-3000 {
+                    font-size: $f-xl;
+                }
+
+                @include w-1400 {
+                    width: 50%;
+                }
+
+                @include w-1000 {
+                    width: 100%;
+                }
+
+                @include w-600 {
+                    font-size: $f-s;
+                }
 
                 .contactIcon {
                     font-size: $f-l;
                     margin-right: $s-xxs;
+
+                    @include w-2000 {
+                        font-size: $f-xl;
+                    }
+        
+                    @include w-3000 {
+                        font-size: $f-xxl;
+                    }
                 }
             }
 

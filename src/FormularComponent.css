@@ -131,10 +131,6 @@ select {
   .formularButton {
     font-size: 2rem;
   }
-  .inputStyle,
-  .textArea {
-    margin-bottom: 14px;
-  }
 }
 @media only screen and (min-width: 3000px) {
   .label {
@@ -143,27 +139,10 @@ select {
   .formularButton {
     font-size: 2.5rem;
   }
-  .inputStyle,
-  .textArea {
-    margin-bottom: 16px;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .formularObject {
-    width: 50rem;
-  }
 }
 @media only screen and (max-width: 600px) {
-  .formularObject {
-    width: 40rem;
-  }
   .textArea {
     min-height: 200px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .formularObject {
-    width: 100%;
   }
 }
 @media only screen and (max-width: 400px) {

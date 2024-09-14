@@ -121,11 +121,6 @@
     .formularButton {
       font-size: $f-m;
     }
-
-    .inputStyle,
-    .textArea {
-      margin-bottom: 14px;
-    }
   }
 
   @media only screen and (min-width: 3000px) {
@@ -136,32 +131,11 @@
     .formularButton {
       font-size: $f-l;
     }
-
-    .inputStyle,
-    .textArea {
-      margin-bottom: 16px;
-    }
-  }
-
-  @media only screen and (max-width: 1100px) {
-    .formularObject {
-      width: 50rem;
-    }
   }
 
   @media only screen and (max-width: 600px) {
-    .formularObject {
-      width: 40rem;
-    }
-
     .textArea {
       min-height: 200px;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    .formularObject {
-      width: 100%;
     }
   }
 
