@@ -1680,6 +1680,9 @@ nav {
   }
 }
 @media only screen and (max-width: 1000px) {
+  #companyName:hover {
+    color: #ffa23f;
+  }
   .nav-links {
     display: none;
   }
