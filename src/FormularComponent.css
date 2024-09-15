@@ -14,6 +14,80 @@ body, html {
   -webkit-text-size-adjust: none;
 }
 
+.popup {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 3rem 4rem;
+  border-radius: 16px;
+  box-shadow: black 0 0 60px;
+  z-index: 2;
+}
+.popup h4 {
+  font-size: 2rem;
+  color: #033755;
+}
+@media only screen and (min-width: 2000px) {
+  .popup h4 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .popup h4 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .popup h4 {
+    font-size: 1.8rem;
+  }
+}
+.popup button {
+  background-color: #ffa23f;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  width: auto;
+  height: auto;
+  font-weight: 600;
+  border-radius: 16px;
+  border: #033755 2px solid;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (min-width: 2000px) {
+  .popup button {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .popup button {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .popup button {
+    font-size: 1.5rem;
+  }
+}
+.popup button:hover {
+  cursor: pointer;
+  transform: scale(1.06);
+}
+
+.popupNewsletter.no,
+.popupGdpr.no,
+.popupPolicy.no {
+  display: none;
+}
+
+.popupNewsletter.yes,
+.popupGdpr.yes,
+.popupPolicy.yes {
+  display: block;
+  position: fixed;
+}
+
 /* Styling celého formuláře */
 .formularObject {
   background: #033755;
@@ -121,6 +195,10 @@ select {
 
 .label span {
   color: #ffa23f;
+}
+
+.label span:hover {
+  cursor: pointer;
 }
 
 /* Media Queries */

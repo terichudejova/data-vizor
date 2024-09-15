@@ -1,5 +1,77 @@
 @import "App";
 
+//Popup card
+.popup {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $main-color;
+  padding: $s-s $s-m;
+  border-radius: 16px;
+  box-shadow: black 0 0 60px;
+  z-index: 2;
+
+  h4 {
+      font-size: $f-m;
+      color: $hover-color;
+
+      @include w-2000 {
+        font-size: $f-l;
+      }
+
+      @include w-3000 {
+        font-size: $f-xl;
+      }
+
+      @include w-600 {
+        font-size: $f-s;
+      }
+  }
+
+  button {
+      background-color: $contrast-color;
+      color: $main-color;
+      padding: $s-xxs $s-xs;
+      font-size: $f-s;
+      width: auto;
+      height: auto;
+      font-weight: 600;
+      border-radius: 16px;
+      border: $hover-color 2px solid;
+      transition: all 0.2s ease-in-out;
+
+      @include w-2000 {
+        font-size: $f-m;
+      }
+
+      @include w-3000 {
+        font-size: $f-l;
+      }
+
+      @include w-600 {
+        font-size: $f-xs;
+      }
+  }
+
+  button:hover {
+      cursor: pointer;
+      transform: scale(1.06);
+  }
+}
+
+.popupNewsletter.no,
+.popupGdpr.no,
+.popupPolicy.no {
+  display: none;
+}
+
+.popupNewsletter.yes,
+.popupGdpr.yes,
+.popupPolicy.yes {
+  display: block;
+  position: fixed;
+}
+
 /* Styling celého formuláře */
 .formularObject {
     background: $hover-color;
@@ -109,6 +181,10 @@
 
   .label span {
     color: $contrast-color;
+  }
+
+  .label span:hover {
+    cursor: pointer;
   }
 
   
