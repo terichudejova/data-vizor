@@ -1,13 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import "./FormularComponent.css";
 
 const FormularComponent = () => {
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const selectedPlan = queryParams.get('plan');
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [plan, setPlan] = useState('');
     const [message, setMessage] = useState('');
     const [subscription, setSubscription] = useState(true);
     const [consent, setConsent] = useState(false);
+
+    useEffect(() => {
+        if (selectedPlan) {
+            setPlan(selectedPlan);
+        }
+    }, [selectedPlan]);
 
 
     const handleSubmit = (e) => {

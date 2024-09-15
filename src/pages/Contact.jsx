@@ -1,9 +1,27 @@
+import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import FormularComponent from "../FormularComponent";
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 export default function Contact() {
+
+    const location = useLocation();
+    const formRef = useRef(null); // Ref pro formulář
+
+    useEffect(() => {
+        const queryParams = new URLSearchParams(location.search);
+        const plan = queryParams.get('plan');
+        
+        // Pokud je v URL parametr plan, posuň se na formulář
+        if (plan && formRef.current) {
+            const offsetY = -100; // Posun o 100px výš
+            const formPosition = formRef.current.getBoundingClientRect().top + window.pageYOffset + offsetY;
+            window.scrollTo({ top: formPosition, behavior: 'smooth' });
+        }
+    }, [location]);
+
     return (
         <div className="outerBox">
             <div className="innerBox">
@@ -11,7 +29,7 @@ export default function Contact() {
                     <h2>Reach Out<br/> and <span>Start Today</span></h2>
                     <p>Whether you're ready to begin your <span>free trial</span>, explore our plans, or have questions about how <span>DataVizor can support your business</span>, we're here to help. Select the plan that fits your needs and reach out to our team for more information. We're excited to <span>connect</span> and help you harness the <span>full power of your data</span>.</p>
                 </div>
-                <div className="formular">
+                <div className="formular" ref={formRef}>
                     <FormularComponent />
                 </div>
             </div>

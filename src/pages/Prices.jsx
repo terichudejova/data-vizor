@@ -1,7 +1,10 @@
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+
 export default function Prices() {
+
     return (
         <div className="outerBox">
             <div className="innerBox">
@@ -25,7 +28,7 @@ export default function Prices() {
                             <p><CheckCircleIcon className='checkIcon'/> No credit card required to start.</p>
                         </div>
                         <div className="buttonDiv">
-                            <NavLink to="/data-vizor/contact" className="pricesButton">
+                            <NavLink to="/data-vizor/contact?plan=Free" className="pricesButton">
                                 Start Your Free Trial
                             </NavLink>
                         </div>
@@ -45,7 +48,7 @@ export default function Prices() {
                             <p><CheckCircleIcon className='checkIcon'/> Email support.</p>
                         </div>
                         <div className="buttonDiv">
-                            <NavLink to="/data-vizor/contact" className="pricesButton">
+                            <NavLink to="/data-vizor/contact?plan=Standard" className="pricesButton">
                                 Choose Standard Now
                             </NavLink>
                         </div>
@@ -66,7 +69,7 @@ export default function Prices() {
                             <p><CheckCircleIcon className='checkIcon'/> Integration with 3rd-party tools and services (API access).</p>
                         </div>
                         <div className="buttonDiv">
-                            <NavLink to="/data-vizor/contact" className="pricesButton">
+                            <NavLink to="/data-vizor/contact?plan=Premium" className="pricesButton">
                                 Choose Premium Now
                             </NavLink>
                         </div>
