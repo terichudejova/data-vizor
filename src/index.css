@@ -304,6 +304,10 @@ footer a:hover {
     font-size: 1.5rem;
   }
 }
+.outerBox .innerBox .clouds .trialButton:hover {
+  background-color: white;
+  box-shadow: 0 0 0 5px #c7d9ff;
+}
 @media only screen and (min-width: 2000px) {
   .outerBox .innerBox .clouds .trialButton {
     font-size: 2.5rem;
@@ -324,10 +328,6 @@ footer a:hover {
   .outerBox .innerBox .clouds .trialButton {
     margin-left: 2rem;
   }
-}
-.outerBox .innerBox .clouds .trialButton:hover {
-  background-color: white;
-  box-shadow: 0 0 0 5px #c7d9ff;
 }
 .outerBox .innerBox .subheadline p {
   color: #033755;

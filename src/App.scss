@@ -217,11 +217,11 @@ $main-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
     @include w-600 {
         font-size: $f-xs;
     }
-}
 
-@mixin buttonHover {
-    background-color: $main-color;
-    box-shadow: 0 0 0 5px $light-color;
+    &:hover {
+        background-color: $main-color;
+        box-shadow: 0 0 0 5px $light-color;
+    }
 }
 
 

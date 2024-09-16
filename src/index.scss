@@ -262,10 +262,6 @@ footer {
                 }
 
             }
-
-            .trialButton:hover {
-                @include buttonHover;
-            }
         }
 
         .subheadline {
@@ -1006,10 +1002,6 @@ footer {
 
                     .pricesButton {
                         @include button
-                    }
-                      
-                    .pricesButton:hover {
-                       @include buttonHover;
                     }
                 }
             }

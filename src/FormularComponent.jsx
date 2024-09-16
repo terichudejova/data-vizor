@@ -59,18 +59,33 @@ const FormularComponent = () => {
 
     // Popup cards
     const [news, setNews] = useState(false);
-      const toggleNews = () => {
-          setNews(!news);
+    const toggleNews = () => {
+        setNews(!news);
+        setSubscription(!subscription);
+    }
+    const toggleNews2 = () => {
+        setNews(!news);
+        setSubscription(subscription);
     }
 
     const [gdpr, setGdpr] = useState(false);
-      const toggleGdpr = () => {
-          setGdpr(!gdpr);
+    const toggleGdpr = () => {
+        setGdpr(!gdpr);
+        setConsent(!consent);
+    }
+    const toggleGdpr2 = () => {
+        setGdpr(!gdpr);
+        setConsent(consent);
     }
 
     const [policy, setPolicy] = useState(false);
-      const togglePolicy = () => {
-          setPolicy(!policy);
+    const togglePolicy = () => {
+        setPolicy(!policy);
+        setConsent(!consent);
+    }
+    const togglePolicy2 = () => {
+        setPolicy(!policy);
+        setConsent(consent);
     }
 
     return (
@@ -78,17 +93,17 @@ const FormularComponent = () => {
             <div className={`popupNewsletter popup ${news ? 'yes' : 'no'}`}>
                     <h4>Unlock the Power of Your Data with DataVizor</h4>
                     <p>Join our newsletter to stay informed about the latest advancements in data analysis, visualization, and reporting. Be the first to receive product updates, expert insights, and tips to help you leverage your data for smarter decision-making.</p>
-                    <button onClick={toggleNews}>Close</button>
+                    <button onClick={toggleNews2}>Close</button>
             </div>
             <div className={`popupGdpr popup ${gdpr ? 'yes' : 'no'}`}>
                     <h4>Your Data is Safe with Us</h4>
                     <p>By submitting this form, you consent to the processing of your personal data. We will only use your information to respond to your inquiry and provide relevant services. Your data will be handled in accordance with applicable data protection regulations.</p>
-                    <button onClick={toggleGdpr}>Close</button>
+                    <button onClick={toggleGdpr2}>Close</button>
             </div>
             <div className={`popupPolicy popup ${policy ? 'yes' : 'no'}`}>
                     <h4>Our Commitment to Your Privacy</h4>
                     <p>At DataVizor, we are committed to protecting your personal data. Our Privacy Policy explains how we collect, use, and safeguard the information you provide. It also details your rights regarding your data and how you can exercise them.</p>
-                    <button onClick={togglePolicy}>Close</button>
+                    <button onClick={togglePolicy2}>Close</button>
             </div>
             <label htmlFor="name" className="label">Company Name:</label>
             <input
