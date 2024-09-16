@@ -190,6 +190,41 @@ $main-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
     }
 }
 
+@mixin button {
+    background-color: $light-color;
+    color: $hover-color;
+    cursor: pointer;
+    border-radius: 16px;
+    width: auto;
+    height: auto;
+    padding: $s-xs $s-xs;
+    transition: 0.3s;
+    font-size: $f-s;
+    border: 5px solid $main-color;
+    box-sizing: border-box;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    @include w-2000 {
+        font-size: $f-m;
+    }
+
+    @include w-3000 {
+        font-size: $f-l;
+    }
+
+    @include w-600 {
+        font-size: $f-xs;
+    }
+}
+
+@mixin buttonHover {
+    background-color: $main-color;
+    box-shadow: 0 0 0 5px $light-color;
+}
+
+
 //breakpoints
 $breakpoints: (
     "w-330": 330px,

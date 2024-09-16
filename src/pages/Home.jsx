@@ -9,7 +9,7 @@ export default function Home() {
             <div className="innerBox">
                <div className="clouds">
                     <h1>Your <span>Cloud</span> Data,<br/>Real-Time<br/>Decisions.</h1>
-                    <NavLink to="/data-vizor/contact" className="trialButton">
+                    <NavLink to="/data-vizor/contact?plan=Free" className="trialButton">
                         Try Free
                     </NavLink>
                     <img id="mockup" src="images/mockup.png"/>

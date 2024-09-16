@@ -146,25 +146,12 @@
 
   /* Styl pro tlačítko */
   .formularButton {
-    background-color: $light-color;
-    color: $hover-color;
-    border: none;
-    cursor: pointer;
-    border-radius: 16px;
-    width: auto;
-    height: auto;
-    padding: $s-xs $s-xs;
-    transition: 0.3s;
-    font-size: $f-s;
-    border: 5px solid $main-color;
-    box-sizing: border-box;
-    font-weight: 600;
+    @include button;
     margin-top: $s-m;
   }
   
   .formularButton:hover {
-    background-color: $main-color;
-    box-shadow: 0 0 0 5px $light-color;
+    @include buttonHover;
   }
   
   /* Efekt při kliknutí */

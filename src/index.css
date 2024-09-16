@@ -271,21 +271,38 @@ footer a:hover {
   }
 }
 .outerBox .innerBox .clouds .trialButton {
-  background-color: #5974a9;
-  color: white;
-  border: none;
+  background-color: #c7d9ff;
+  color: #033755;
   cursor: pointer;
   border-radius: 16px;
   width: auto;
   height: auto;
+  padding: 2rem 2rem;
   transition: 0.3s;
-  font-size: 2rem;
-  font-family: "Work Sans", sans-serif;
-  padding: 1.5rem 2rem;
-  margin-left: 6rem;
+  font-size: 1.8rem;
+  border: 5px solid white;
+  box-sizing: border-box;
+  font-weight: 600;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  margin-left: 6rem;
   position: absolute;
   bottom: 5rem;
+}
+@media only screen and (min-width: 2000px) {
+  .outerBox .innerBox .clouds .trialButton {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 3000px) {
+  .outerBox .innerBox .clouds .trialButton {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .outerBox .innerBox .clouds .trialButton {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (min-width: 2000px) {
   .outerBox .innerBox .clouds .trialButton {
@@ -309,9 +326,8 @@ footer a:hover {
   }
 }
 .outerBox .innerBox .clouds .trialButton:hover {
-  background-color: #033755;
-  box-shadow: 0 0 0 5px #5974a9;
-  color: #fff;
+  background-color: white;
+  box-shadow: 0 0 0 5px #c7d9ff;
 }
 .outerBox .innerBox .subheadline p {
   color: #033755;
@@ -1318,7 +1334,6 @@ footer a:hover {
 .outerBox .innerBox .offer .offerCard .buttonDiv .pricesButton {
   background-color: #c7d9ff;
   color: #033755;
-  border: none;
   cursor: pointer;
   border-radius: 16px;
   width: auto;
@@ -1330,6 +1345,7 @@ footer a:hover {
   box-sizing: border-box;
   font-weight: 600;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 @media only screen and (min-width: 2000px) {
   .outerBox .innerBox .offer .offerCard .buttonDiv .pricesButton {
@@ -1339,6 +1355,11 @@ footer a:hover {
 @media only screen and (min-width: 3000px) {
   .outerBox .innerBox .offer .offerCard .buttonDiv .pricesButton {
     font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .outerBox .innerBox .offer .offerCard .buttonDiv .pricesButton {
+    font-size: 1.5rem;
   }
 }
 .outerBox .innerBox .offer .offerCard .buttonDiv .pricesButton:hover {
@@ -1593,6 +1614,7 @@ nav {
   font-size: 2rem;
   padding: 1rem 2rem;
   color: #5974a9;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1600,7 +1622,6 @@ nav {
 }
 
 .navLink:hover {
-  cursor: pointer;
   color: #033755;
 }
 

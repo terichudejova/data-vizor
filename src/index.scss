@@ -239,19 +239,8 @@ footer {
             }
 
             .trialButton {
-                background-color: $dark-color;
-                color: $main-color;
-                border: none;
-                cursor: pointer;
-                border-radius: 16px;
-                width: auto;
-                height: auto;
-                transition: 0.3s;
-                font-size: $f-m;
-                font-family: $main-font;
-                padding: $s-s / 2 $s-m / 2;
+                @include button;
                 margin-left: $s-xl;
-                text-decoration: none;
                 position: absolute;
                 bottom: $s-l;
 
@@ -275,9 +264,7 @@ footer {
             }
 
             .trialButton:hover {
-                background-color: $hover-color;
-                box-shadow: 0 0 0 5px $dark-color;
-                color: #fff;
+                @include buttonHover;
             }
         }
 
@@ -1018,33 +1005,11 @@ footer {
                     margin-top: $s-m;
 
                     .pricesButton {
-                        background-color: $light-color;
-                        color: $hover-color;
-                        border: none;
-                        cursor: pointer;
-                        border-radius: 16px;
-                        width: auto;
-                        height: auto;
-                        padding: $s-xs $s-xs;
-                        transition: 0.3s;
-                        font-size: $f-s;
-                        border: 5px solid $main-color;
-                        box-sizing: border-box;
-                        font-weight: 600;
-                        text-decoration: none;
-
-                        @include w-2000 {
-                            font-size: $f-m;
-                        }
-    
-                        @include w-3000 {
-                            font-size: $f-l;
-                        }
+                        @include button
                     }
                       
                     .pricesButton:hover {
-                        background-color: $main-color;
-                        box-shadow: 0 0 0 5px $light-color;
+                       @include buttonHover;
                     }
                 }
             }
@@ -1279,11 +1244,11 @@ footer {
     font-size: $f-m;
     padding: $s-xxs $s-xs;
     color: $dark-color;
+    cursor: pointer;
     @include row-center-center;
   }
   
   .navLink:hover {
-    cursor: pointer;
     color: $hover-color;
   }
 
