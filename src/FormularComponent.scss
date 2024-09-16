@@ -10,6 +10,11 @@
   border-radius: 16px;
   box-shadow: black 0 0 60px;
   z-index: 2;
+  width: 40%;
+
+  @include w-1000 {
+    width: 60%;
+  }
 
   h4 {
       font-size: $f-m;
@@ -148,10 +153,6 @@
   .formularButton {
     @include button;
     margin-top: $s-m;
-  }
-  
-  .formularButton:hover {
-    @include buttonHover;
   }
   
   /* Efekt při kliknutí */
