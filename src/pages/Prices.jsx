@@ -9,7 +9,7 @@ export default function Prices() {
         <div className="outerBox">
             <div className="innerBox">
                 <div className="popisek">
-                    <h2>Choose The <span>Right Plan</span><br/>For Your Business</h2>
+                    <h2>Choose The <span>Right&nbsp;Plan</span><br/>For Your Business</h2>
                     <p>Whether you're just getting started on your data journey or require <span>advanced, enterprise-level features</span>, DataVizor offers a plan tailored to meet your unique needs. From essential tools that help small teams <span>visualize and analyze their data</span>, to sophisticated, <span>AI-powered solutions</span> for larger organizations, our pricing options provide flexibility without sacrificing quality. Get the insights you need to make <span>smarter, faster decisions</span>, all in real time. Plus, with our <span>free month trial</span> of the Premium version, you can experience the full range of DataVizor's capabilities—risk-free and with no upfront commitment. Dive in today and discover how DataVizor can transform the way you work with data.</p>
                 </div>
 

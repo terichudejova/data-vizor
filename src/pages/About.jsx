@@ -30,7 +30,7 @@ export default function About() {
                     <div className="timeline">
                         <div className="timelineSection">
                             <div className="circle"></div>
-                            <div className="popisek">
+                            <div className="popisekTimeline">
                                 <h4>2011</h4>
                                 <p>Launch of our first cloud-based dashboard, enabling users to visualize data in real-time without the need for complex installations.</p>
                                 <div className="timelineLine"></div>
@@ -38,7 +38,7 @@ export default function About() {
                         </div>
                         <div className="timelineSection">
                             <div className="circle"></div>
-                            <div className="popisek">
+                            <div className="popisekTimeline">
                                 <h4>2012</h4>
                                 <p>Introduction of predictive analytics features, allowing businesses to forecast trends and make proactive decisions.</p>
                                 <div className="timelineLine"></div>
@@ -46,7 +46,7 @@ export default function About() {
                         </div>
                         <div className="timelineSection">
                             <div className="circle"></div>
-                            <div className="popisek">
+                            <div className="popisekTimeline">
                                 <h4>2013</h4>
                                 <p>Expansion into global markets, with clients across Europe and Asia.</p>
                                 <div className="timelineLine"></div>
@@ -54,7 +54,7 @@ export default function About() {
                         </div>
                         <div className="timelineSection">
                             <div className="circle"></div>
-                            <div className="popisek">
+                            <div className="popisekTimeline">
                                 <h4>2015</h4>
                                 <p>Recognition as a leader in data visualization solutions by Gartner in their annual Magic Quadrant report</p>
                                 <div className="timelineLine"></div>
@@ -62,7 +62,7 @@ export default function About() {
                         </div>
                         <div className="timelineSection">
                             <div className="circle"></div>
-                            <div className="popisek">
+                            <div className="popisekTimeline">
                                 <h4>2019</h4>
                                 <p>Rollout of advanced AI-powered tools, further enhancing our platform’s ability to automate insights and streamline reporting.</p>
                                 <div className="timelineLine"></div>

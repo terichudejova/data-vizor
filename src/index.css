@@ -718,10 +718,10 @@ footer a:hover {
   flex-shrink: 0;
   box-sizing: border-box;
 }
-.outerBox .innerBox .thirdSection .timeline .timelineSection .popisek {
+.outerBox .innerBox .thirdSection .timeline .timelineSection .popisekTimeline {
   margin-left: 2rem;
 }
-.outerBox .innerBox .thirdSection .timeline .timelineSection .popisek h4 {
+.outerBox .innerBox .thirdSection .timeline .timelineSection .popisekTimeline h4 {
   font-size: 3rem;
   margin-top: 0;
   margin-bottom: 0;
@@ -729,26 +729,26 @@ footer a:hover {
   color: #033755;
 }
 @media only screen and (min-width: 2000px) {
-  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek h4 {
+  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisekTimeline h4 {
     font-size: 3.6rem;
   }
 }
 @media only screen and (min-width: 3000px) {
-  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek h4 {
+  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisekTimeline h4 {
     font-size: 4rem;
   }
 }
-.outerBox .innerBox .thirdSection .timeline .timelineSection .popisek p {
+.outerBox .innerBox .thirdSection .timeline .timelineSection .popisekTimeline p {
   width: 100%;
 }
-.outerBox .innerBox .thirdSection .timeline .timelineSection .popisek .timelineLine {
+.outerBox .innerBox .thirdSection .timeline .timelineSection .popisekTimeline .timelineLine {
   width: 15rem;
   height: 2px;
   border-radius: 20px;
   background-color: #c7d9ff;
 }
 @media only screen and (max-width: 400px) {
-  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisek .timelineLine {
+  .outerBox .innerBox .thirdSection .timeline .timelineSection .popisekTimeline .timelineLine {
     width: 10rem;
   }
 }
