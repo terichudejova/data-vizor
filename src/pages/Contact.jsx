@@ -27,7 +27,7 @@ export default function Contact() {
     return (
         <div className="outerBox">
             <div className="innerBox">
-                <div className={`contactPopisek outerBox`}>
+                <div className="contactPopisek">
                     <h2>Reach Out<br/> and <span>Start Today</span></h2>
                     <p>Whether you're ready to begin your <span>free trial</span>, explore our plans, or have questions about how <span>DataVizor can support your business</span>, we're here to help. Select the plan that fits your needs and reach out to our team for more information. We're excited to <span>connect</span> and help you harness the <span>full power of your data</span>.</p>
                 </div>
