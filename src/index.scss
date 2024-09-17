@@ -867,7 +867,7 @@ footer {
 
 
 
-// SERVICES
+// PRICES
 .outerBox {
     .innerBox {
         @include column-start-center;
@@ -876,7 +876,7 @@ footer {
             margin-top: $s-l;
 
             h2 {
-                margin: 0;
+                margin-top: 0;
 
                 span {
                     color: $hover-color;
@@ -1024,7 +1024,7 @@ footer {
             @include column-start-start;
 
             h2 {
-                margin: 0;
+                margin-top: 0;
 
                 span {
                     color: $hover-color;
