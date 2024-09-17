@@ -1367,6 +1367,9 @@ footer a:hover {
   box-shadow: 0 0 0 5px #c7d9ff;
 }
 
+.outerBox {
+  transition: filter 0.3s ease;
+}
 .outerBox .innerBox {
   min-height: auto;
 }

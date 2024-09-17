@@ -2,18 +2,26 @@
 
 //Popup card
 .popup {
+  position: relative;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $main-color;
   padding: $s-s $s-m;
   border-radius: 16px;
-  box-shadow: black 0 0 60px;
-  z-index: 2;
+  box-shadow: black 0 0 100px;
+  border: 0.5px solid black;
+  z-index: 100;
   width: 40%;
+  filter: blur(0) !important;
 
   @include w-1000 {
     width: 60%;
+    padding: $s-s $s-s;
+  }
+
+  @include w-600 {
+    padding: $s-s $s-xs;
   }
 
   h4 {
@@ -61,6 +69,17 @@
   button:hover {
       cursor: pointer;
       transform: scale(1.06);
+  }
+
+  &::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    width: 10000%;
+    height: 10000%;
+    z-index: -100;
+    top: -1000%;
+    left: -1000%;
   }
 }
 

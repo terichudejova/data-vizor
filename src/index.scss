@@ -1013,6 +1013,8 @@ footer {
 
 // CONTACT US
 .outerBox {
+    transition: filter 0.3s ease;
+
     .innerBox {
         min-height: auto;
 
